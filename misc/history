@@ -1,0 +1,3503 @@
+    1  20180904_180723  ls
+    2  20180904_180828  sftp ashinmarin@huckleberry1.arc.vt.edu
+    3  20180920_114342  $ module load Anaconda/5.1.0
+    4  20180920_114432  source activate pytorch_env
+    5  20180920_114443  python
+    6  20180920_120013  exit() cd..
+    7  20180925_111304  module load Anaconda/5.1.0
+    8  20180925_111313  cp -r /groups/srijithr_shared/pytorch_env ~/.conda/envs/
+    9  20180925_111338  ls
+   10  20180925_111547  conda create -n test
+   11  20180925_111611  cp -r /groups/srijithr_shared/pytorch_env ~/.conda/envs/
+   12  20180925_114140  conda env list
+   13  20180925_114510  interact -l walltime=01:00:00
+   14  20180926_123435  #!/bin/bash
+   15  20180926_123443  #SBATCH -J hello-world
+   16  20180926_123454  #SBATCH -p normal_q
+   17  20180926_123509  #SBATCH -N 1
+   18  20180926_123518  #SBATCH -t 10:00
+   19  20180926_123527  #SBATCH --mem=500G
+   20  20180926_123536  #SBATCH --gres=gpu:pascal:4
+   21  20180926_123544  echo "hello world"
+   22  20180926_123716  ashinmarin@hulogin1:~/Slurm$ sbatch hello.sh
+   23  20180926_123738  ~/Slurm$ sbatch hello.sh
+   24  20180926_123740  ls
+   25  20180926_123800  ~/Slurm$ squeue -u mcclurej
+   26  20180926_123815  ~/Slurm$ squeue -u ashinmarin
+   27  20180926_123857  salloc -N1 -t 10:00
+   28  20180926_123952  jobid
+   29  20180926_124007  echo "hello world"
+   30  20180926_124023  salloc -n1 -t 10:00 --mem-per-cpu=8G --gres=gpu:pascal:1
+   31  20180926_124411  salloc -N1 -t 10:00
+   32  20180926_125309  scp temp.txt ashinmarin@huckleberry-1.arc.vt.edu:myfolder/blueridge.txt
+   33  20180926_125357  sftp ashinmarin@huckleberry1.arc.vt.edu
+   34  20180928_150052  #!/bin/bash
+   35  20180928_150233  #SBATCH -J hello-world
+   36  20180928_150241  #SBATCH -p normal_q
+   37  20180928_150248  #SBATCH -N 1
+   38  20180928_150256  #SBATCH -t 10:00
+   39  20180928_150304  #SBATCH --mem=500G
+   40  20180928_150310  #SBATCH --gres=gpu:pascal:4
+   41  20180928_150318  echo "hello world"
+   42  20180928_150331  salloc -N1 -t 10:00
+   43  20181015_151110  ls
+   44  20181015_151335  sftp ashinmarin@cascades1.arc.vt.edu
+   45  20181015_151938  exit
+   46  20181015_165356  ls
+   47  20181015_165359  cd work
+   48  20181015_165415  lls
+   49  20181015_165436  lpwd
+   50  20181015_165749  lcd home
+   51  20181015_170236  sftp ashinmarin@cascades1.arc.vt.edu
+   52  20181015_172249  module load python
+   53  20181015_172305  python prep_data.py
+   54  20181015_172317  ls
+   55  20181015_172331  cd text-summarization-tensorflow-master
+   56  20181015_172339  ls
+   57  20181015_172352  python prep_data.py
+   58  20181015_172429  pip install wget
+   59  20181015_172529  sudo pip install wget
+   60  20181015_172713  pip install wget
+   61  20181015_172843  pip install --upgrade pip
+   62  20181015_173234  export PYTHONUSERBASE=/home/<ashinmarin>/cascades/python
+   63  20181015_173245  exit
+   64  20181015_173659  ls
+   65  20181015_173722  export PYTHONUSERBASE=/home/<ashinmarin>/cascades/python
+   66  20181015_173736  export PYTHONUSERBASE=/home/ashinmarin/cascades/python
+   67  20181015_173742  ls
+   68  20181015_173755  module load gcc/5.2.0 python
+   69  20181015_173820  pip install wget
+   70  20181015_173833  module load gcc/5.2.0 python atlas numpy scipy
+   71  20181015_173847  pip install wget
+   72  20181015_173859  pip install --user wget
+   73  20181015_173931  easy_install --user wget
+   74  20181015_173944  module load gcc/5.2.0 python
+   75  20181015_173955  easy_install --user wget
+   76  20181015_174038  export PYTHONUSERBASE=/home/ashinmarin/cascades/python
+   77  20181015_174053  cd PYTHONUSERBASE
+   78  20181015_174112  module load gcc/5.2.0 python
+   79  20181015_174124  easy_install --user wget
+   80  20181015_174138  easy_install --user matplotlib
+   81  20181015_174212  ls
+   82  20181018_112802  module load Anaconda
+   83  20181018_112832  easy_install --user wget
+   84  20181018_112934  cd text-summarization-tensorflow-master
+   85  20181018_112936  ls
+   86  20181018_112941  ls
+   87  20181018_114252  python prep_data.py
+   88  20181018_114323  python train.py
+   89  20181018_114349  ls
+   90  20181018_114747  python test.py
+   91  20181018_114759  python train.py
+   92  20181018_114825  easy_install --user gensim
+   93  20181018_115103  easy_install --user nltk
+   94  20181018_115118  cd text-summarization-tensorflow-master
+   95  20181018_115122  ls
+   96  20181018_115130  python train.py
+   97  20181018_115404  module load Anaconda3
+   98  20181018_115408  ls
+   99  20181018_115442  easy_install --user nltk
+  100  20181018_115549  python text.py
+  101  20181018_115555  python test.py
+  102  20181018_115608  easy_install --user tensorflow
+  103  20181018_115635  easy_install --user gensim
+  104  20181018_120321  pip install tensorflow
+  105  20181018_120412  python train.py
+  106  20181018_172047  ls
+  107  20181018_172140  qsub ./Cascades_TensorFlow_Test.sh
+  108  20181018_172229  python Cascades_TensorFlow_Test.py
+  109  20181018_172334  module load Anaconda3
+  110  20181018_172533  wget https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
+  111  20181018_172600  bash Anaconda3-5.2.0-Linux-x86_64.sh
+  112  20181018_174305  conda install pytorch=0.3.1 cuda90 -c pytorch
+  113  20181018_174446  ls
+  114  20181018_174504  ./anaconda3/bin/conda 
+  115  20181018_174531  ./anaconda3/bin/conda install pytorch=0.3.1 cuda90 -c pytorch
+  116  20181018_175037  ls
+  117  20181018_175104  qsub Cascades_TensorFlow_Test.sh
+  118  20181018_175129  conda install tensorflow-gpu
+  119  20181018_180207  qsub Cascades_TensorFlow_Test.sh
+  120  20181018_180219  ls
+  121  20181018_180311  python Cascades_TensorFlow_Test.py
+  122  20181018_180431  vim Cascades_TensorFlow_Test.sh.o297604
+  123  20181018_180444  ls -l
+  124  20181018_180452  vim Cascades_TensorFlow_Test.sh.e297604
+  125  20181018_180750  qsub Cascades_TensorFlow_Test.sh
+  126  20181018_180810  ls
+  127  20181018_180908  ls -l
+  128  20181018_180932  vim Cascades_TensorFlow_Test.sh.o297609 
+  129  20181018_180949  vim Cascades_TensorFlow_Test.sh.e297609 
+  130  20181018_181157  ls
+  131  20181018_181211  cd text-summarization-tensorflow-master
+  132  20181018_181214  ls
+  133  20181018_181217  cd text-summarization-tensorflow-master
+  134  20181018_181218  ls
+  135  20181018_181302  qsub Cascades_TensorFlow_Test.sh
+  136  20181018_181335  cd ..
+  137  20181018_181342  qsub Cascades_TensorFlow_Test.sh
+  138  20181018_181350  ls
+  139  20181018_181417  ls -l
+  140  20181018_181501  ls
+  141  20181018_181534  vim Cascades_TensorFlow_Test.sh.o297615
+  142  20181018_181557  vim Cascades_TensorFlow_Test.sh.e297615
+  143  20181024_123155  ls
+  144  20181024_123625  cd text-summarization-tensorflow-master
+  145  20181024_123626  ls
+  146  20181024_123629  cd text-summarization-tensorflow-master
+  147  20181024_123631  ls
+  148  20181024_124124  qsub Cascades_TensorFlow_Test.sh
+  149  20181024_124127  cd ..
+  150  20181024_124129  ls
+  151  20181024_124131  cd ..
+  152  20181024_124135  qsub Cascades_TensorFlow_Test.sh
+  153  20181024_124149  ls
+  154  20181024_124322  vim Cascades_TensorFlow_Test.sh.o299638
+  155  20181024_124339  vim Cascades_TensorFlow_Test.sh.e299638
+  156  20181024_131223  cd text-summarization-tensorflow-master
+  157  20181024_131244  ls
+  158  20181024_131255  qsub Cascades_TensorFlow_Test.sh
+  159  20181024_131259  ls
+  160  20181024_131544  vim Cascades_TensorFlow_Test.sh.o299643
+  161  20181024_131557  vim Cascades_TensorFlow_Test.sh.e299643
+  162  20181024_131735  cd ..
+  163  20181024_131739  ls
+  164  20181024_131758  cd anaconda3
+  165  20181024_131759  ls
+  166  20181024_131819  cd bin
+  167  20181024_131820  ls
+  168  20181024_131900  cd conda
+  169  20181024_132008  cd conda-env 
+  170  20181024_132020  cd conda
+  171  20181024_132239  cd ..
+  172  20181024_132240  ls
+  173  20181024_132307  cd conda-meta
+  174  20181024_132308  ls
+  175  20181024_132312  cd ..
+  176  20181024_132314  ls
+  177  20181024_132340  cd envs
+  178  20181024_132342  ls
+  179  20181024_132546  cd ..
+  180  20181024_132548  ls
+  181  20181024_132556  cd ..
+  182  20181024_132558  ls
+  183  20181024_132621  cd  text-summarization-tensorflow-master
+  184  20181024_132624  ls
+  185  20181024_132635  cd ../cd ..
+  186  20181024_132639  cd ..
+  187  20181024_132643  ls
+  188  20181024_132650  cd anaconda3
+  189  20181024_132651  ls
+  190  20181024_172405  module load Anaconda/5.1.0 
+  191  20181024_172411  conda env list
+  192  20181024_172542  ls
+  193  20181024_172548  cd anaconda3/
+  194  20181024_172549  ls
+  195  20181024_172616  cd bin/
+  196  20181024_172619  ls -ltr
+  197  20181024_172629  cd conda
+  198  20181024_172640  cd ..
+  199  20181024_172705  which python
+  200  20181024_172713  cd anaconda3/
+  201  20181024_172715  ls
+  202  20181024_172721  cd bin/
+  203  20181024_172722  ld
+  204  20181024_172723  ls
+  205  20181024_172822  cd ..
+  206  20181024_172825  ls
+  207  20181024_172838  cd text-summarization-tensorflow-master/text-summarization-tensorflow-master/
+  208  20181024_172839  ls
+  209  20181024_172911  vi Cascades_TensorFlow_Test.sh
+  210  20181024_172941  cat Cascades_TensorFlow_Test.sh
+  211  20181024_172949  vi Cascades_TensorFlow_Test.sh
+  212  20181024_173000  cat Cascades_TensorFlow_Test.sh
+  213  20181024_173012  ls
+  214  20181024_173018  qsub Cascades_TensorFlow_Test.sh
+  215  20181024_173044  checkjob -v 299821
+  216  20181024_173103  ls 
+  217  20181024_173125  cat Cascades_TensorFlow_Test.sh.e299821
+  218  20181024_173139  vi Cascades_TensorFlow_Test.sh
+  219  20181024_173152  qsub Cascades_TensorFlow_Test.sh
+  220  20181024_173202  checkjob -v 299822
+  221  20181024_173239  ls
+  222  20181024_173302  cat Cascades_TensorFlow_Test.sh.e299822
+  223  20181024_173311  vi Cascades_TensorFlow_Test.sh
+  224  20181024_173341  qsub Cascades_TensorFlow_Test.sh
+  225  20181024_173420  checkjob -v 299823
+  226  20181024_173847  ls
+  227  20181024_173911  cat Cascades_TensorFlow_Test.sh.e299823
+  228  20181024_173953  cd ..
+  229  20181024_173955  ls
+  230  20181024_174000  cd ~
+  231  20181024_174151  ./anaconda3/bin/conda install gensim
+  232  20181024_174309  ls
+  233  20181024_174317  cd text-summarization-tensorflow-master
+  234  20181024_174323  ls
+  235  20181024_174341  qsub Cascades_TensorFlow_Test.sh
+  236  20181024_174352  checkjob 299825
+  237  20181024_174738  ls
+  238  20181024_174755  cat Cascades_TensorFlow_Test.sh.e299825
+  239  20181024_174944  cd ..
+  240  20181024_174947  cd ~
+  241  20181024_174951  cd anaconda3/bin/
+  242  20181024_174953  ls
+  243  20181024_175126  cd ~
+  244  20181024_175131  cd text-summarization-tensorflow-master/text-summarization-tensorflow-master/
+  245  20181024_175132  ls
+  246  20181024_175140  vi train.py 
+  247  20181024_175223  qsub -k oe Cascades_TensorFlow_Test.sh
+  248  20181024_175234  checkjob 299826
+  249  20181024_175534  cd ~
+  250  20181024_175535  ls
+  251  20181024_175549  cat Cascades_TensorFlow_Test.sh.e299826
+  252  20181024_175559  cat Cascades_TensorFlow_Test.sh.o299826
+  253  20181024_175607  checkjob 299826
+  254  20181024_175840  ls
+  255  20181024_180119  checkjob 299826
+  256  20181024_235049  ls
+  257  20181024_235059  cd text-summarization-tensorflow-master
+  258  20181024_235102  cd text-summarization-tensorflow-master/
+  259  20181024_235104  ls
+  260  20181024_235132  checkjob 299825
+  261  20181024_235152  cat Cascades_TensorFlow_Test.sh.o299825
+  262  20181024_235221  cat Cascades_TensorFlow_Test.sh.e299825
+  263  20181024_235459  cat Cascades_TensorFlow_Test.sh.e299643
+  264  20181024_235541  cat Cascades_TensorFlow_Test.sh.e299823
+  265  20181024_235603  cat Cascades_TensorFlow_Test.sh.e299822
+  266  20181024_235615  cat Cascades_TensorFlow_Test.sh.o299822
+  267  20181024_235640  cat Cascades_TensorFlow_Test.sh.e299821
+  268  20181024_235732  qsub -k -oe Cascades_TensorFlow_Test.sh
+  269  20181024_235757  qsub -k oe Cascades_TensorFlow_Test.sh
+  270  20181025_000050  ls
+  271  20181025_000102  rm Cascades_TensorFlow_Test.sh.o299643
+  272  20181025_000103  ls
+  273  20181025_000113  rm Cascades_TensorFlow_Test.sh.e299643
+  274  20181025_000115  ls
+  275  20181025_000147  rm Cascades_TensorFlow_Test.sh.o299821
+  276  20181025_000155  rm Cascades_TensorFlow_Test.sh.e299821
+  277  20181025_000156  ls
+  278  20181025_000233  rm Cascades_TensorFlow_Test.sh.o299823 Cascades_TensorFlow_Test.sh.e299823
+  279  20181025_000234  ls
+  280  20181025_000252  rm  Cascades_TensorFlow_Test.sh.o299825 Cascades_TensorFlow_Test.sh.e299825
+  281  20181025_000253  ls
+  282  20181025_000312  rm Cascades_TensorFlow_Test.sh.e299822 Cascades_TensorFlow_Test.sh.o299822
+  283  20181025_000313  ls
+  284  20181025_000329  checkjob 300020
+  285  20181025_011408  ls
+  286  20181025_011457  cd sumdata
+  287  20181025_011458  ls
+  288  20181025_011506  cd ..
+  289  20181025_011511  cd saved_model
+  290  20181025_011512  ls
+  291  20181025_011516  cd ..
+  292  20181025_011538  vi Cascades_TensorFlow_Test.sh
+  293  20181025_011633  qsub -k oe Cascades_TensorFlow_Test.sh
+  294  20181025_011651  checkjob 300048
+  295  20181025_011657  ls
+  296  20181025_011725  qsub Cascades_TensorFlow_Test.sh
+  297  20181025_011728  ls
+  298  20181025_011742  checkjob 300049
+  299  20181025_011745  ls
+  300  20181025_111636  cd  text-summarization-tensorflow-master
+  301  20181025_111640  ls
+  302  20181025_111653  cat Cascades_TensorFlow_Test.sh.o300049
+  303  20181025_111712  cat Cascades_TensorFlow_Test.sh.e300049
+  304  20181025_111900  vim test.py
+  305  20181025_112226  vim Cascades_TensorFlow_Test.sh
+  306  20181025_112300  vi Cascades_TensorFlow_Test.sh
+  307  20181025_112438  qsub Cascades_TensorFlow_Test.sh
+  308  20181025_112443  ls
+  309  20181025_112718  checkjob 300253
+  310  20181025_114143  cd text-summarization-tensorflow-master
+  311  20181025_114147  ls
+  312  20181025_114206  checkjob 300253
+  313  20181025_115616  ls
+  314  20181025_120419  checkjob 300253
+  315  20181025_121119  qsub -k oe Cascades_TensorFlow_Test.sh
+  316  20181025_121138  qdel 300324
+  317  20181025_121148  checkjob 300324
+  318  20181025_121204  vim Cascades_TensorFlow_Test.sh
+  319  20181025_121351  qsub -k oe Cascades_TensorFlow_Test.sh
+  320  20181025_121435  checkjob 300253
+  321  20181026_183231  ls
+  322  20181026_183248  cd text-summarization-tensorflow-master
+  323  20181026_183251  ls
+  324  20181026_183342  checkjob 300326
+  325  20181026_183449  cat Cascades_TensorFlow_Test.sh.e300253
+  326  20181027_023623  ls
+  327  20181027_023627  cd text-summarization-tensorflow-master/
+  328  20181027_023630  ls
+  329  20181027_023652  checkjob 300326
+  330  20181027_023730  checkjob 300253
+  331  20181027_023741  checkjob 300326
+  332  20181027_023844  cat Cascades_TensorFlow_Test.sh
+  333  20181027_023859  vi Cascades_TensorFlow_Test.sh
+  334  20181027_023943  qsub -k oe Cascades_TensorFlow_Test.sh
+  335  20181027_023956  checkjob 300766
+  336  20181027_024013  ls
+  337  20181027_025359  checkjob 300766
+  338  20181027_025423  vim result.txt
+  339  20181027_031049  ls
+  340  20181029_123237  rm Cascades_TensorFlow_Test.sh.e297615  Cascades_TensorFlow_Test.sh.e300324
+  341  20181029_123238  ls
+  342  20181029_123251  cd text-summarization-tensorflow-master/text-summarization-tensorflow-master
+  343  20181029_123253  ls
+  344  20181029_123355  rm  Cascades_TensorFlow_Test.sh.o299826 Cascades_TensorFlow_Test.sh.e299826
+  345  20181029_123402  ls
+  346  20181029_123449  cd ~
+  347  20181029_123450  l
+  348  20181029_123452  ls
+  349  20181029_123503  cat Cascades_TensorFlow_Test.sh.e300766
+  350  20181029_123524  cat Cascades_TensorFlow_Test.sh.o300766
+  351  20181029_124432  ls
+  352  20181029_124441  cd text-summarization-tensorflow-master
+  353  20181029_124449  ls
+  354  20181029_124458  cat Cascades_TensorFlow_Test.py
+  355  20181029_124540  cat Cascades_TensorFlow_Test.sh
+  356  20181029_124739  cd ..
+  357  20181029_124742  cd ~
+  358  20181029_124743  ls
+  359  20181029_124747  cd TensorFlow-Summarization-master/
+  360  20181029_124748  ls
+  361  20181029_124756  cat Cascades_TensorFlow_Test.sh
+  362  20181029_124827  vim Cascades_TensorFlow_Test.sh
+  363  20181029_125002  qsub -k -oe Cascades_TensorFlow_Test.sh
+  364  20181029_125012  qsub -k oe Cascades_TensorFlow_Test.sh
+  365  20181029_125106  checkjob 301370
+  366  20181029_135133  ls
+  367  20181029_135140  checkjob 301370
+  368  20181029_135156  cd ~
+  369  20181029_135157  ls
+  370  20181029_135211  cat Cascades_TensorFlow_Test.sh.o301370
+  371  20181029_135220  cat Cascades_TensorFlow_Test.sh.e301370
+  372  20181029_194249  ls 
+  373  20181029_194303  cat Cascades_TensorFlow_Test.sh.o301370
+  374  20181029_194312  cat Cascades_TensorFlow_Test.sh.e301370
+  375  20181029_195101  ls
+  376  20181029_195104  /home
+  377  20181029_195106  ls
+  378  20181029_195748  scp local.txt ashinmarin@cascades1.arc.vt.edu:home
+  379  20181029_195900  scp C:\Users\ashin\BDTS\TensorFlow-Summarization-master\a.txt ashinmarin@cascades1.arc.vt.edu:home
+  380  20181029_195914  scp \ashin\BDTS\TensorFlow-Summarization-master\a.txt ashinmarin@cascades1.arc.vt.edu:home
+  381  20181029_195932  scp user\BDTS\TensorFlow-Summarization-master\a.txt ashinmarin@cascades1.arc.vt.edu:home
+  382  20181029_195956  scp user\\BDTS\\TensorFlow-Summarization-master\\a.txt ashinmarin@cascades1.arc.vt.edu:home
+  383  20181030_190215  ls
+  384  20181030_190218  cd TensorFlow-Summarization-master/
+  385  20181030_190222  ls
+  386  20181030_190250  qsub -k oe  Cascades_TensorFlow_Test.sh
+  387  20181030_190255  cat  Cascades_TensorFlow_Test.sh
+  388  20181030_190314  checkjob 301989
+  389  20181030_190320  ls
+  390  20181030_190325  cd~
+  391  20181030_190328  cd ~
+  392  20181030_190330  ls
+  393  20181030_190345  cat Cascades_TensorFlow_Test.sh.e301989
+  394  20181030_190434  ls
+  395  20181030_190448  cat Cascades_TensorFlow_Test.sh.o301989
+  396  20181030_190522  cd TensorFlow-Summarization-master/
+  397  20181030_190523  ls
+  398  20181030_190619  cat Cascades_TensorFlow_Test.sh
+  399  20181030_190837  cd script
+  400  20181030_190838  ls
+  401  20181030_190848  vim train.py 
+  402  20181030_190937  vim test.py
+  403  20181031_130632  ls
+  404  20181031_130648  cat Cascades_TensorFlow_Test.sh.e301989
+  405  20181101_111912  ls
+  406  20181101_111918  cd TensorFlow-Summarization-master/
+  407  20181101_111919  ls
+  408  20181101_111930  cat Cascades_TensorFlow_Test.sh
+  409  20181101_111945  cd ~
+  410  20181101_111946  ls
+  411  20181101_111952  cd anaconda3/
+  412  20181101_111953  ls
+  413  20181101_111957  cd bin
+  414  20181101_111958  ls
+  415  20181101_112024  cd ~
+  416  20181101_112025  ls
+  417  20181101_112027  cd T
+  418  20181101_112030  cd TensorFlow-Summarization-master/
+  419  20181101_112031  ls
+  420  20181101_112037  vi Cascades_TensorFlow_Test.sh 
+  421  20181101_112102  qsub -k oe Cascades_TensorFlow_Test.sh 
+  422  20181101_112112  cd ~
+  423  20181101_112113  ls
+  424  20181101_112132  rm Cascades_TensorFlow_Test.sh.o301370 Cascades_TensorFlow_Test.sh.e301370
+  425  20181101_112135  ls
+  426  20181101_112838  rm Cascades_TensorFlow_Test.sh.o301989 Cascades_TensorFlow_Test.sh.e301989
+  427  20181101_112839  ls
+  428  20181101_112901  cat  Cascades_TensorFlow_Test.sh.e302950
+  429  20181101_112948  conds lidt
+  430  20181101_112954  conds list
+  431  20181101_113000  conda list
+  432  20181101_113128  conda create --name temp
+  433  20181101_113150  conda create --name test23
+  434  20181101_113203  python
+  435  20181101_113227  source activate test23
+  436  20181101_113232  python
+  437  20181101_113547  pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-1.1.0-cp35-cp35m-win_amd64.whl
+  438  20181101_113612  pip install --upgrade pip
+  439  20181101_113642  pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-1.1.0-cp35-cp35m-win_amd64.whl
+  440  20181101_113706  pip install --ignore-installed --upgrade tensorflow==1.1
+  441  20181101_113934  python
+  442  20181101_114602  which python
+  443  20181101_114613  exit() ls
+  444  20181101_114618  :q
+  445  20181101_114638  deactivate
+  446  20181101_114646  source deactivate
+  447  20181101_114647  ls
+  448  20181101_114653  cd T
+  449  20181101_114657  cd TensorFlow-Summarization-master/
+  450  20181101_114658  ls
+  451  20181101_114704  cat Cascades_TensorFlow_Test.sh 
+  452  20181101_114711  vim Cascades_TensorFlow_Test.sh
+  453  20181101_114818  cd ~
+  454  20181101_114822  ls
+  455  20181101_114829  source actiavte test23
+  456  20181101_114837  source activate test23
+  457  20181101_114840  python
+  458  20181101_114953  python -c 'import tensorflow as tf; print(tf._version_)'
+  459  20181101_115021  python -c 'import tensorflow as tf; print(tf.__version__)'
+  460  20181101_123412  ls
+  461  20181101_123416  cd TensorFlow-Summarization-master/
+  462  20181101_123418  ls
+  463  20181101_123428  vi Cascades_TensorFlow_Test.sh 
+  464  20181101_123558  qsub Cascades_TensorFlow_Test.sh 
+  465  20181101_123602  ls
+  466  20181101_123606  cd ~
+  467  20181101_123607  ls
+  468  20181101_123655  cd TensorFlow-Summarization-master/
+  469  20181101_123656  ls
+  470  20181101_123722  cat Cascades_TensorFlow_Test.sh.o302970
+  471  20181101_123800  cat Cascades_TensorFlow_Test.sh.e302970
+  472  20181101_123844  conda info --envs
+  473  20181101_124000  vim Cascades_TensorFlow_Test.sh
+  474  20181101_124123  qsub Cascades_TensorFlow_Test.sh 
+  475  20181101_124410  cd ~
+  476  20181101_124413  ls
+  477  20181101_124452  cd TensorFlow-Summarization-master/
+  478  20181101_124506  checkjob 302972
+  479  20181101_124523  cd ~
+  480  20181101_124524  ls
+  481  20181101_115132  ls
+  482  20181101_115134  cd TensorFlow-Summarization-master/
+  483  20181101_115135  ls
+  484  20181101_115144  cat Cascades_TensorFlow_Test.sh 
+  485  20181101_115207  qsub -k oe Cascades_TensorFlow_Test.sh 
+  486  20181101_115222  ls
+  487  20181101_115226  cd ~
+  488  20181101_115228  ls
+  489  20181101_115248  rm Cascades_TensorFlow_Test.sh.e302950 Cascades_TensorFlow_Test.sh.o302950
+  490  20181101_115250  ls
+  491  20181101_115305  cat Cascades_TensorFlow_Test.sh.o302954
+  492  20181101_115316  Cascades_TensorFlow_Test.sh.e302954
+  493  20181101_115323  cat Cascades_TensorFlow_Test.sh.e302954
+  494  20181101_115833  cd TensorFlow-Summarization-master/
+  495  20181101_115834  ls
+  496  20181101_115903  cat Cascades_TensorFlow_Test.sh
+  497  20181101_120038  which python
+  498  20181101_120112  source activate test123
+  499  20181101_120121  source activate test23
+  500  20181101_120127  which python
+  501  20181101_120340  conda list
+  502  20181101_120630  conda create -n tfenv123 python 3.6
+  503  20181101_120640  conda create -n tfenv123 python 3.4
+  504  20181101_120719  conda create -n tfenv123 python=3.4
+  505  20181101_120855  conda env list
+  506  20181101_120919  source activate tfenv123
+  507  20181101_121017  pip install tensorflow==1.1
+  508  20181101_121300  which python
+  509  20181101_121400  python
+  510  20181101_121459  conda list
+  511  20181101_121517  which python
+  512  20181101_121542  ls
+  513  20181101_121549  vim 
+  514  20181101_121605  vim Cascades_TensorFlow_Test.sh 
+  515  20181105_120540  ls
+  516  20181105_120547  cd TensorFlow-Summarization-master/
+  517  20181105_120548  ls
+  518  20181105_120552  cat Cascades_TensorFlow_Test.
+  519  20181105_120557  cat Cascades_TensorFlow_Test.sh
+  520  20181105_120748  ls
+  521  20181105_120751  cd ~
+  522  20181105_120752  ls
+  523  20181105_120758  ls -ltr
+  524  20181105_120810  cat 
+  525  20181105_120832  cat Cascades_TensorFlow_Test.sh.e302954
+  526  20181105_120957  ls
+  527  20181105_121108  cd anaconda3/bin/
+  528  20181105_121127  cd ..
+  529  20181105_121128  ls
+  530  20181105_121130  cd envs/
+  531  20181105_121131  ls
+  532  20181105_121138  cd tfenv123/
+  533  20181105_121140  ls
+  534  20181105_121213  cd bin/
+  535  20181105_121221  ls
+  536  20181105_121229  python
+  537  20181105_121336  cd ..
+  538  20181105_121350  ls
+  539  20181105_121421  cd TensorFlow-Summarization-master/
+  540  20181105_121422  ls
+  541  20181105_121429  ls -ltr
+  542  20181105_121438  cat Cascades_TensorFlow_Test.sh
+  543  20181105_121515  ls
+  544  20181105_121532  qsub -k oe Cascades_TensorFlow_Test.sh
+  545  20181105_121622  checkjob -v 304475
+  546  20181105_121631  cd ~
+  547  20181105_121654  ls -ltr
+  548  20181105_121737  cat Cascades_TensorFlow_Test.sh.e304475
+  549  20181105_121842  ls
+  550  20181105_121849  cd anaconda3/
+  551  20181105_121852  ls
+  552  20181105_121905  cd envs/
+  553  20181105_121906  ls
+  554  20181105_121914  cd tfenv123/
+  555  20181105_121916  ls
+  556  20181105_121954  cd ..
+  557  20181105_121955  ls
+  558  20181105_121959  cd tfenv123/
+  559  20181105_121959  ls
+  560  20181105_122004  cd bin/
+  561  20181105_122005  ls
+  562  20181105_122019  conda env lisst
+  563  20181105_122030  conda env list
+  564  20181105_122045  source activate tfenv123
+  565  20181105_122050  cd ..
+  566  20181105_122058  which pythom
+  567  20181105_122101  which python
+  568  20181105_122112  cd TensorFlow-Summarization-master/
+  569  20181105_122113  ls
+  570  20181105_122124  qsub -k oe Cascades_TensorFlow_Test.sh
+  571  20181105_122127  cd ~
+  572  20181105_122149  ls -ltr
+  573  20181105_122312  cat Cascades_TensorFlow_Test.sh.e304480
+  574  20181105_122351  which python
+  575  20181105_122405  cd TensorFlow-Summarization-master/
+  576  20181105_122413  cat Cascades_TensorFlow_Test.
+  577  20181105_122417  cat Cascades_TensorFlow_Test.sh
+  578  20181105_122448  ls
+  579  20181105_122453  cd script/
+  580  20181105_122453  ls
+  581  20181105_122506  cd ~
+  582  20181105_122514  source deactivate
+  583  20181105_122533  module load Anaconda/5.1.0 
+  584  20181105_122538  conda env list
+  585  20181105_122554  which pythom
+  586  20181105_122557  which python
+  587  20181105_122607  source activate tfenv123
+  588  20181105_122634  conda info --envs
+  589  20181105_122700  source activate test
+  590  20181105_122710  source activate
+  591  20181105_122845  source deactivate
+  592  20181105_122958  conda create -n tensorenv python=3.6
+  593  20181105_123354  source activate tensorenv
+  594  20181105_123358  pip install tensorflow==1.1
+  595  20181105_123504  which python
+  596  20181105_123513  ls
+  597  20181105_123516  cd anaconda3/
+  598  20181105_123517  ls
+  599  20181105_123527  cd ..
+  600  20181105_123528  ls
+  601  20181105_123533  cd TensorFlow-Summarization-master/
+  602  20181105_123535  ls
+  603  20181105_123550  vi Cascades_TensorFlow_Test.sh
+  604  20181105_123928  cat Cascades_TensorFlow_Test.
+  605  20181105_123931  cat Cascades_TensorFlow_Test.sh
+  606  20181105_124003  cd ~
+  607  20181105_124004  ls
+  608  20181105_124059  cd TensorFlow-Summarization-master/
+  609  20181105_124100  ls
+  610  20181105_124113  qsub -k oe Cascades_TensorFlow_Test.sh
+  611  20181105_124208  checkjob -v 304491
+  612  20181105_124224  cd ~
+  613  20181105_124226  ls -ltr
+  614  20181105_124304  cat Cascades_TensorFlow_Test.sh.e304491
+  615  20181105_124355  ls -ltr
+  616  20181105_124410  checkjob -v 304491
+  617  20181105_124447  ls -ltr
+  618  20181105_124503  cat Cascades_TensorFlow_Test.sh.e304491
+  619  20181105_124621  ls -ltr
+  620  20181105_130149  checkjob -v 304491
+  621  20181105_130158  ls
+  622  20181105_130210  cat Cascades_TensorFlow_Test.sh.e304491
+  623  20181105_130411  ls
+  624  20181105_130421  cat Cascades_TensorFlow_Test.sh
+  625  20181105_130432  :q
+  626  20181105_130435  ls
+  627  20181105_130442  cd TensorFlow-Summarization-master/
+  628  20181105_130444  ls
+  629  20181105_130454  cat Cascades_TensorFlow_Test.sh
+  630  20181105_130503  vi Cascades_TensorFlow_Test.sh
+  631  20181105_130544  qsub -k oe Cascades_TensorFlow_Test.sh
+  632  20181105_130600  checkjob -v 304503
+  633  20181105_131042  ls
+  634  20181105_131049  cd ~
+  635  20181105_131051  ls
+  636  20181105_131100  cat  Cascades_TensorFlow_Test.sh.e304503
+  637  20181105_131113  ls -ltr
+  638  20181105_131125  cat Cascades_TensorFlow_Test.sh.e304503
+  639  20181105_131245  cd TensorFlow-Summarization-master/
+  640  20181105_131246  ls
+  641  20181105_131300  cd output
+  642  20181105_131302  ls
+  643  20181105_131346  cat duc2003.10_300000.txt
+  644  20181114_131056  ls
+  645  20181114_131102  cd cnn-dailymail-master/
+  646  20181114_131103  ls
+  647  20181114_131113  unzip cnn_stories.tgz
+  648  20181114_131313  tar -xvzf cnn_stores.tgz
+  649  20181114_131420  tar xvzf cnn_stores.tgz
+  650  20181114_131424  tar xvzf cnn_stores.tgz.gz
+  651  20181114_131456  dtrx xvzf cnn_stores.tgz
+  652  20181114_131544  tar -xzf cnn_stores.tgz
+  653  20181114_131700  cnn_stories.tgzls
+  654  20181114_131704  ls
+  655  20181114_131716  cd cnn_stores.tgz
+  656  20181114_131718  ls
+  657  20181114_131919  tar tfz cnn_stores.tgz
+  658  20181114_132005  tar -tzf cnn_stores.tgz
+  659  20181114_132403  tar tzf cnn_stores.tgz
+  660  20181114_132836  tar -xvzf cnn_stores.tgz
+  661  20181114_132858  ls -al
+  662  20181114_132904  tar -xvzf cnn_stories.tgz
+  663  20181114_135216  tar -xvzf dailymail_stories.tgz 
+  664  20181115_111010  ls
+  665  20181115_111013  cd cnn-dailymail-master/
+  666  20181115_111014  ls
+  667  20181115_111030  tar -xvzf dailymail_stories.tgz 
+  668  20181115_120516  ls
+  669  20181115_120542  cd cnn-dailymail-master/
+  670  20181115_120543  ls
+  671  20181115_120656  vi Cascades_TensorFlow_Test.sh 
+  672  20181115_120804  cd ..
+  673  20181115_120806  ls
+  674  20181115_120809  vi Cascades_TensorFlow_Test.sh 
+  675  20181115_120958  cd ..
+  676  20181115_120959  ls
+  677  20181115_121118  cd stanford-corenlp-full-2018-10-05/
+  678  20181115_121119  LS
+  679  20181115_121121  ls
+  680  20181115_121148  cd ..
+  681  20181115_121324  export CLASSPATH=./stanford-corenlp-full-2018-10-05/stanford-corenlp-full-2018-10-05/stanford-corenlp-3.9.2.jar
+  682  20181115_121346  echo "Please tokenize this text." | java edu.stanford.nlp.process.PTBTokenizer
+  683  20181119_165926  ls
+  684  20181119_165931  module list
+  685  20181119_165941  module avail
+  686  20181119_165950  module load jdk/1.8.0
+  687  20181119_165951  ls
+  688  20181119_165957  module list
+  689  20181119_170004  find -name "*.java" > sources.txt
+  690  20181119_170546  exit
+  691  20181119_170658  ls
+  692  20181119_170703  module list
+  693  20181119_170712  module load jdk/1.8.0
+  694  20181119_170713  ls
+  695  20181119_170716  module list
+  696  20181119_170743  cd javac @sources.txt
+  697  20181119_170753  module list
+  698  20181119_170814  module avail
+  699  20181119_171025  cd stanford-corenlp-full-2018-10-05/
+  700  20181119_171035  ls
+  701  20181119_171047  find -name "*.java" > sources.txt
+  702  20181119_171055  javac @sources.txt
+  703  20181119_171214  ls
+  704  20181119_171217  ls -al
+  705  20181119_171231  cd ..
+  706  20181119_171234  ls
+  707  20181119_171244  find -name "*.java" > sources.txt
+  708  20181119_171250  javac @sources.txt
+  709  20181119_171522  cd stanford-corenlp-full-2018-10-05/
+  710  20181119_171524  ls
+  711  20181119_171549  export CLASSPATH=/stanford-corenlp-full-2016-10-31/stanford-corenlp-full-2016-10-31/stanford-corenlp-3.7.0.jar
+  712  20181119_171557  echo "Please tokenize this text." | java edu.stanford.nlp.process.PTBTokenizer
+  713  20181119_171611  javac @sources.txt
+  714  20181119_172031  export CLASSPATH=/stanford-corenlp-full-2016-10-31/stanford-corenlp-full-2016-10-31/stanford-corenlp-3.9.2.jar
+  715  20181119_172045  echo "Please tokenize this text." | java edu.stanford.nlp.process.PTBTokenizer
+  716  20181119_172052  ls -al
+  717  20181119_161915  ls
+  718  20181119_162644  module avail
+  719  20181119_162758  module add jdk/1.8.0
+  720  20181119_162810  module load jdk/1.8.0
+  721  20181119_162823  module list
+  722  20181119_163119  which jdk
+  723  20181119_163242  export CLASSPATH=/path/to/stanford-corenlp-full-2016-10-31/stanford-corenlp-3.7.0.jar
+  724  20181119_163249  ls
+  725  20181119_163324  export CLASSPATH=/ stanford-corenlp-full-2018-10-05/stanford-corenlp-full-2018-10-05/stanford-corenlp-full-2016-10-31/stanford-corenlp-3.7.0.jar
+  726  20181119_163329  ls
+  727  20181119_163335  cd stanford-corenlp-full-2018-10-05/
+  728  20181119_163336  ls
+  729  20181119_163340  cd stanford-corenlp-full-2018-10-05/
+  730  20181119_163341  ls
+  731  20181119_163420  export CLASSPATH=/stanford-corenlp-full-2016-10-31/stanford-corenlp-full-2016-10-31/stanford-corenlp-3.7.0.jar
+  732  20181119_163428  echo "Please tokenize this text." | java edu.stanford.nlp.process.PTBTokenizer
+  733  20181119_180751  ls
+  734  20181119_180755  ls -al
+  735  20181119_180818  cd stanford-corenlp-full-2018-10-05/
+  736  20181119_180820  ls
+  737  20181119_180837  module avail
+  738  20181119_180901  module load jdk/1.8.0u172  jdk/1.8.0
+  739  20181119_180906  module list
+  740  20181119_181023  ls
+  741  20181119_181029  cd ..
+  742  20181119_181030  ls
+  743  20181119_181312  export CLASSPATH=/stanford-corenlp-full-2018-10-05/stanford-corenlp-full-2018-10-05/stanford-corenlp-3.9.2.jar
+  744  20181119_181324  echo "Please tokenize this text." | java edu.stanford.nlp.process.PTBTokenizer
+  745  20181119_181335  cd stanford-corenlp-full-2018-10-05/
+  746  20181119_181336  ls
+  747  20181119_181343  cd stanford-corenlp-full-2018-10-05/
+  748  20181119_181344  ls
+  749  20181119_181355  export CLASSPATH=/stanford-corenlp-full-2018-10-05/stanford-corenlp-full-2018-10-05/stanford-co
+  750  20181119_181442  export CLASSPATH=/stanford-corenlp-full-2018-10-05/stanford-corenlp-full-2018-10-05/stanford-corenlp-3.9.2.jar
+  751  20181119_181452  echo "Please tokenize this text." | java edu.stanford.nlp.process.PTBTokenizer
+  752  20181119_182909  cd ../
+  753  20181119_182923  cd ..
+  754  20181119_182925  ls
+  755  20181119_182932  echo "Please tokenize this text." | java edu.stanford.nlp.process.PTBTokenizer
+  756  20181119_183013  export CLASSPATH=/stanford-corenlp-full-2018-10-05/stanford-corenlp-full-2018-10-05/stanford-corenlp-3.9.2.jar
+  757  20181119_183017  ls
+  758  20181119_183026  echo "Please tokenize this text." | java edu.stanford.nlp.process.PTBTokenizer
+  759  20181119_183135  cd stanford-corenlp-full-2018-10-05/
+  760  20181119_183141  ls -al
+  761  20181119_183312  javac @sources.txt
+  762  20181119_184933  cd stanford-corenlp-3.9.2
+  763  20181119_184939  ls 
+  764  20181119_185006  cd ~
+  765  20181119_185008  ls
+  766  20181119_185233  export CLASSPATH=/stanford-corenlp-full-2018-10-05/stanford-corenlp-full-2018-10-05/stanford-corenlp-3.9.2.jar
+  767  20181119_185243  echo "Please tokenize this text." | java edu.stanford.nlp.process.PTBTokenizer
+  768  20181119_185554  cd stanford-corenlp-full-2018-10-05/
+  769  20181119_185600  ls -al
+  770  20181119_185607  pwd
+  771  20181119_185653  export CLASSPATH=/home/ashinmarin/stanford-corenlp-full-2018-10-05/stanford-corenlp-full-2018-10-05/stanford-corenlp-3.9.2.jar
+  772  20181119_185703  echo "Please tokenize this text." | java edu.stanford.nlp.process.PTBTokenizer
+  773  20181119_185817  cd ~
+  774  20181119_185819  ls
+  775  20181119_185933  cd cnn-dailymail-master
+  776  20181119_185941  ls
+  777  20181119_190124  pwd
+  778  20181119_190155  cd cnn-dailymail-master
+  779  20181119_190157  ls
+  780  20181119_190221  vim Cascades_TensorFlow_Test.sh
+  781  20181119_190324  cd ..
+  782  20181119_190329  ls
+  783  20181119_190351  vim Cascades_TensorFlow_Test.sh
+  784  20181119_190918  ls
+  785  20181119_190923  cd cnn-dailymail-master/
+  786  20181119_190925  ls
+  787  20181119_190930  pwd
+  788  20181119_190951  cd cnn-dailymail-master/
+  789  20181119_190952  ls
+  790  20181119_190957  vim Cascades_TensorFlow_Test.sh 
+  791  20181119_191208  cd ..
+  792  20181119_191209  pwd
+  793  20181119_191519  ls
+  794  20181119_191526  cd cnn-dailymail-master/
+  795  20181119_191527  ls
+  796  20181119_191547  vim Cascades_TensorFlow_Test.sh 
+  797  20181119_191741  qsub -k oe Cascades_TensorFlow_Test.sh
+  798  20181119_191752  checkjob -v 312920
+  799  20181119_191949  vim Cascades_TensorFlow_Test.sh 
+  800  20181119_192038  cd ..
+  801  20181119_192040  ls
+  802  20181119_192046  cd cnn-dailymail-master/
+  803  20181119_192049  ls -al
+  804  20181119_192609  cd Cascades_TensorFlow_Test.sh 
+  805  20181119_192614  vim Cascades_TensorFlow_Test.sh 
+  806  20181119_193447  checkjob -v 312920
+  807  20181119_193636  cat Cascades_TensorFlow_Test.sh.e312920
+  808  20181119_193639  ls -al
+  809  20181119_193643  cd ~
+  810  20181119_193647  ls -al
+  811  20181119_193705  cd cnn-dailymail-master/
+  812  20181119_193706  ls
+  813  20181119_193709  ls -al
+  814  20181119_193716  cd cnn
+  815  20181119_193717  ls
+  816  20181119_193723  cd stories
+  817  20181119_193724  ls
+  818  20181119_193746  cd ~
+  819  20181119_193747  ls
+  820  20181119_194247  checkjob -v 312920
+  821  20181119_194418  ls -al
+  822  20181119_194425  cd cnn-dailymail-master/
+  823  20181119_194435  ls
+  824  20181119_194438  ls -al
+  825  20181119_194509  qsub Cascades_TensorFlow_Test.sh 
+  826  20181119_194512  ls
+  827  20181119_194521  checkjob 312922
+  828  20181119_194559  ls -al
+  829  20181119_194604  cd url_lists/
+  830  20181119_194605  ls
+  831  20181119_194610  cd ..
+  832  20181119_194611  ls
+  833  20181119_194717  checkjob 312922
+  834  20181119_194801  cat Cascades_TensorFlow_Test.sh 
+  835  20181119_194816  source activate tensorenv
+  836  20181119_194836  qsub Cascades_TensorFlow_Test.sh 
+  837  20181119_194845  checkjob -v 312923
+  838  20181119_194854  checkjob 312923
+  839  20181119_195050  ls
+  840  20181119_195111  cat Cascades_TensorFlow_Test.sh.o312923
+  841  20181119_195126  ls -al
+  842  20181119_195138  cat Cascades_TensorFlow_Test.sh.e312923
+  843  20181119_195348  vim Cascades_TensorFlow_Test.sh.e312923
+  844  20181119_195447  cd ~
+  845  20181119_195449  ls
+  846  20181119_195456  cd TensorFlow-Summarization-master/
+  847  20181119_195457  ls
+  848  20181119_195505  vim Cascades_TensorFlow_Test.sh
+  849  20181119_195545  cd ~
+  850  20181119_195546  ls
+  851  20181119_195552  cd cnn-dailymail-master/
+  852  20181119_195602  ls
+  853  20181119_195608  vim Cascades_TensorFlow_Test.sh
+  854  20181119_195741  cd ..
+  855  20181119_195742  vim Cascades_TensorFlow_Test.sh
+  856  20181119_195916  qsub -k -oe Cascades_TensorFlow_Test.sh 
+  857  20181119_195927  qsub -k oe Cascades_TensorFlow_Test.sh 
+  858  20181119_195941  checkjob 312927
+  859  20181119_200528  ls
+  860  20181119_200534  ls -al
+  861  20181119_200539  cd ..
+  862  20181119_200540  ls
+  863  20181119_200546  ls -al
+  864  20181119_200607  cat Cascades_TensorFlow_Test.sh.e312927
+  865  20181119_200858  cd cnn-dailymail-master/
+  866  20181119_200900  ls
+  867  20181119_200903  pwd
+  868  20181119_201017  cd ..
+  869  20181119_201019  ls
+  870  20181119_201024  cd TensorFlow-Summarization-master/
+  871  20181119_201025  ls
+  872  20181119_201106  vi Cascades_TensorFlow_Test.sh
+  873  20181119_201616  ls
+  874  20181119_201622  cd ~
+  875  20181119_201639  cd cnn-dailymail-master/
+  876  20181119_201645  ls
+  877  20181119_201656  cd cnncd cnn-dailymail-master/
+  878  20181119_201702  cd cnn-dailymail-master/
+  879  20181119_201705  ls
+  880  20181119_201717  vim make_datafiles.py 
+  881  20181119_202314  ls
+  882  20181119_202320  ls -al
+  883  20181119_202325  cd ..
+  884  20181119_202326  ls
+  885  20181119_202340  qsub -k oe Cascades_TensorFlow_Test.sh
+  886  20181119_202408  checkjob -v 312938
+  887  20181119_202425  ls -al
+  888  20181119_202428  cd ..
+  889  20181119_202430  ls -al
+  890  20181119_202440  cat Cascades_TensorFlow_Test.sh.e312938
+  891  20181119_202629  cd cnn-dailymail-master/
+  892  20181119_202630  ls
+  893  20181119_202643  cd cnncd cnn-dailymail-master/
+  894  20181119_202647  cd cnn-dailymail-master/
+  895  20181119_202649  ls
+  896  20181119_202659  vim make_datafiles.py 
+  897  20181119_202758  module avail
+  898  20181119_202824  module load python/3.5.2
+  899  20181119_202828  module list
+  900  20181119_202912  ls
+  901  20181119_202919  cd ..
+  902  20181119_202923  vim Cascades_TensorFlow_Test.sh 
+  903  20181119_203030  module list
+  904  20181119_203037  ls
+  905  20181119_203041  cd cnn-dailymail-master/
+  906  20181119_203042  ls
+  907  20181119_203112  python make_datafiles.py /home/ashinmarin/cnn-dailymail-master/cnn/stories /home/ashinmarin/cnn-dailymail-master/dailymail/stories
+  908  20181119_203204  vi make_datafiles.py 
+  909  20181119_203316  python make_datafiles.py /home/ashinmarin/cnn-dailymail-master/cnn/stories /home/ashinmarin/cnn-dailymail-master/dailymail/stories
+  910  20181119_203337  ls -al
+  911  20181119_203348  cd ..
+  912  20181119_203349  ls
+  913  20181119_203433  qsub -k oe Cascades_TensorFlow_Test.sh
+  914  20181119_203448  checkjob -v 312941
+  915  20181119_203843  ls
+  916  20181119_224600  ls
+  917  20181119_224942  cd cnn-dailymail-master/
+  918  20181119_224943  ls
+  919  20181119_225006  cd cnn_stories
+  920  20181119_225016  cd cnn_stories_tokenized/
+  921  20181119_225017  ls
+  922  20181119_225108  cd ..
+  923  20181119_225112  cd dm_stories_tokenized/
+  924  20181119_225115  ls
+  925  20181119_225350  cd ~
+  926  20181119_225351  ls
+  927  20181119_225400  cat Cascades_TensorFlow_Test.sh.e312941
+  928  20181119_225441  source activate tensorenv
+  929  20181119_225446  module list
+  930  20181119_225520  conda env list
+  931  20181119_225657  cd cnn-dailymail-master/
+  932  20181119_225659  ls
+  933  20181119_225710  qsub -k oe Cascades_TensorFlow_Test.sh
+  934  20181119_231227  checkjob 313011
+  935  20181119_231233  checkjob -v 313011
+  936  20181119_231355  cd ~
+  937  20181119_231356  ls
+  938  20181119_231428  cat Cascades_TensorFlow_Test.sh.e313011
+  939  20181119_231452  cd anaconda3
+  940  20181119_231453  ls
+  941  20181119_231510  ls -al
+  942  20181119_231553  cd bin
+  943  20181119_231553  ls
+  944  20181119_231600  cd p
+  945  20181119_231810  cd ~
+  946  20181119_231812  ls
+  947  20181119_231815  cd cnn-dailymail-master/
+  948  20181119_231827  vim Cascades_TensorFlow_Test.sh
+  949  20181119_232019  qsub -k oe Cascades_TensorFlow_Test.sh
+  950  20181119_232030  module avial
+  951  20181119_232044  module avail
+  952  20181119_232410  ls -al
+  953  20181119_232443  cat Cascades_TensorFlow_Test.sh.e313014
+  954  20181119_232454  cd cnn-dailymail-master/
+  955  20181119_232455  ls
+  956  20181119_232504  vim Cascades_TensorFlow_Test.sh 
+  957  20181119_232527  qsub -k oe Cascades_TensorFlow_Test.sh
+  958  20181119_232537  checkjob 313016
+  959  20181119_232646  cd ~
+  960  20181119_232648  ls
+  961  20181119_232700  cat Cascades_TensorFlow_Test.sh.e313016
+  962  20181119_233717  cd ~
+  963  20181119_233733  ls
+  964  20181119_233748  cd stanford-corenlp-full-2018-10-05/
+  965  20181119_233755  ls
+  966  20181119_233800  pwd
+  967  20181119_233840  cd ~
+  968  20181119_233911  export CLASSPATH=/home/ashinmarin/stanford-corenlp-full-2018-10-05/stanford-corenlp-full-2018-10-05/stanford-corenlp-3.9.2.jar
+  969  20181119_233915  cd cnn-dailymail-master/
+  970  20181119_233917  ls
+  971  20181119_233928  qsub -k oe Cascades_TensorFlow_Test.sh
+  972  20181119_233936  checkjob 313022
+  973  20181119_234237  cd ~
+  974  20181119_234239  ls -al
+  975  20181119_234257  cat Cascades_TensorFlow_Test.sh.e313022
+  976  20181119_234319  echo "Please tokenize this text." | java edu.stanford.nlp.process.PTBTokenizer
+  977  20181119_234330  module load jdk/1.8.0
+  978  20181119_234334  echo "Please tokenize this text." | java edu.stanford.nlp.process.PTBTokenizer
+  979  20181119_234454  cd cnn-dailymail-master/
+  980  20181119_234455  ls 
+  981  20181119_234458  cat Cascades_TensorFlow_Test.sh 
+  982  20181119_234654  vi Cascades_TensorFlow_Test.sh 
+  983  20181119_234757  qsub -k oe Cascades_TensorFlow_Test.sh
+  984  20181119_234805  checkjob 313023
+  985  20181120_002309  ls
+  986  20181120_002318  cd cnn_stories_tokenized/
+  987  20181120_002320  ls
+  988  20181120_002340  cd ..
+  989  20181120_002342  ls
+  990  20181120_002357  cd dm_stories_tokenized
+  991  20181120_002359  ls
+  992  20181120_002546  cd ..
+  993  20181120_002556  ls
+  994  20181120_002706  cd finished_files/
+  995  20181120_002708  ls
+  996  20181120_002817  cd ~
+  997  20181120_002818  ls
+  998  20181120_002821  ls -al
+  999  20181120_002835  cat Cascades_TensorFlow_Test.sh.e313023
+ 1000  20181120_003858  ls
+ 1001  20181120_004322  cd cnn-
+ 1002  20181120_004326  cd cnn-dailymail-master/
+ 1003  20181120_004422  ls
+ 1004  20181120_004539  vim Cascades_TensorFlow_Test.sh 
+ 1005  20181120_004636  cd cnn-dailymail-master/
+ 1006  20181120_004637  ls
+ 1007  20181120_004654  cat Cascades_TensorFlow_Test.sh
+ 1008  20181120_004750  cd
+ 1009  20181120_004756  cd cnn-dailymail-master/
+ 1010  20181120_004800  ls
+ 1011  20181120_004822  qsub -k oe Cascades_TensorFlow_Test.sh
+ 1012  20181120_005040  checkjob 313028
+ 1013  20181120_012849  cd ~
+ 1014  20181120_012851  ls
+ 1015  20181120_012854  ls -al
+ 1016  20181120_012903  cat Cascades_TensorFlow_Test.sh.e313028
+ 1017  20181120_012946  cd cnn-dailymail-master/
+ 1018  20181120_012948  ls
+ 1019  20181120_012954  cd finished_files/
+ 1020  20181120_012954  ls
+ 1021  20181120_013207  cd ~
+ 1022  20181120_013208  ls
+ 1023  20181120_013224  ls -al
+ 1024  20181120_013234  cat Cascades_TensorFlow_Test.sh.o313028
+ 1025  20181120_013638  cat Cascades_TensorFlow_Test.sh.e313028
+ 1026  20181120_013824  ls
+ 1027  20181120_013828  cd cnn-dailymail-master/
+ 1028  20181120_013829  ls
+ 1029  20181120_013834  cd cnn-dailymail-master/
+ 1030  20181120_013834  ls
+ 1031  20181120_013854  vim make_datafiles.py 
+ 1032  20181120_014050  qsub -k oe Cascades_TensorFlow_Test.sh
+ 1033  20181120_014100  checkjob 313052
+ 1034  20181120_021735  cd ~
+ 1035  20181120_021737  ls
+ 1036  20181120_021800  cat Cascades_TensorFlow_Test.sh.o313052 
+ 1037  20181120_022304  checkjob 313052
+ 1038  20181120_024337  ls
+ 1039  20181120_024342  cd cnn-dailymail-master/
+ 1040  20181120_024343  ls
+ 1041  20181120_024357  checkjob 313052
+ 1042  20181120_024413  checkjob -v 313052
+ 1043  20181120_024422  cd finished_files/
+ 1044  20181120_024424  ls
+ 1045  20181120_024429  cd ~
+ 1046  20181120_024430  l
+ 1047  20181120_024431  ls
+ 1048  20181120_024447  cat Cascades_TensorFlow_Test.sh.o313052
+ 1049  20181120_024635  ls
+ 1050  20181120_025213  ls -al
+ 1051  20181120_025224  cat Cascades_TensorFlow_Test.sh.o313052
+ 1052  20181120_114640  ls
+ 1053  20181120_114657  cd cnn-dailymail-master/
+ 1054  20181120_114703  ls
+ 1055  20181120_114712  cd finished_files/
+ 1056  20181120_114713  ls
+ 1057  20181120_115000  cd test.bin 
+ 1058  20181120_115040  cd ..
+ 1059  20181120_115046  vim make_datafiles.py 
+ 1060  20181120_115317  qsub -k oe Cascades_TensorFlow_Test.sh
+ 1061  20181120_115325  checkjon 313196
+ 1062  20181120_115333  checkjob 313196
+ 1063  20181120_123416  ls
+ 1064  20181120_123429  checkjob 313196
+ 1065  20181120_145332  ls
+ 1066  20181120_145339  cd cnn-dailymail-master/
+ 1067  20181120_145340  ls
+ 1068  20181120_145347  cd finished_files/
+ 1069  20181120_145348  ls
+ 1070  20181120_145357  checkjob 313196
+ 1071  20181120_145403  cd ~
+ 1072  20181120_145405  ls
+ 1073  20181120_145416  cat Cascades_TensorFlow_Test.sh.e313196
+ 1074  20181120_145502  cat  Cascades_TensorFlow_Test.sh.o313196
+ 1075  20181120_150348  ls
+ 1076  20181120_150351  cd cnn-dailymail-master/
+ 1077  20181120_150355  ls
+ 1078  20181120_150359  vim make_datafiles.py 
+ 1079  20181120_151044  qsub -k oe Cascades_TensorFlow_Test.sh
+ 1080  20181120_151247  checkjob 313359
+ 1081  20181120_151313  qdel 313360
+ 1082  20181120_151321  checkjob 313360
+ 1083  20181120_151345  checkjob 313359
+ 1084  20181120_155026  cd ~
+ 1085  20181120_155027  ls
+ 1086  20181120_155059  cat Cascades_TensorFlow_Test.sh.e313359
+ 1087  20181120_155114  checkjob 313359
+ 1088  20181120_155540  ls
+ 1089  20181120_155542  cd cnn-dailymail-master/
+ 1090  20181120_155546  ls
+ 1091  20181120_155550  cd finished_files/
+ 1092  20181120_155551  ls
+ 1093  20181120_155556  cd chunked
+ 1094  20181120_155557  ls
+ 1095  20181120_155652  cd ~
+ 1096  20181120_155655  ls
+ 1097  20181120_155707  cat Cascades_TensorFlow_Test.sh.e313359
+ 1098  20181120_160057  ls
+ 1099  20181120_160101  cd cnn-dailymail-master/
+ 1100  20181120_160102  ls
+ 1101  20181120_160107  cd finished_files/
+ 1102  20181120_160109  ls
+ 1103  20181120_160156  cd ~
+ 1104  20181120_160157  LS
+ 1105  20181120_160159  ls
+ 1106  20181120_160208  cat Cascades_TensorFlow_Test.sh.e313359
+ 1107  20181120_160232  cd cnn-dailymail-master/
+ 1108  20181120_160233  ls
+ 1109  20181120_160246  cd cnn-dailymail-master/
+ 1110  20181120_160247  ls
+ 1111  20181120_160250  cd finished_files/
+ 1112  20181120_160252  ls
+ 1113  20181120_160256  cd chunked/
+ 1114  20181120_160301  ls
+ 1115  20181120_161043  cd ~
+ 1116  20181120_162358  ls
+ 1117  20181120_163320  cd pointer-generator-master/
+ 1118  20181120_163321  ls
+ 1119  20181120_163329  vi Cascades_TensorFlow_Test.sh 
+ 1120  20181120_163511  cd finished_files/
+ 1121  20181120_163513  ls
+ 1122  20181120_163518  cd chunked/
+ 1123  20181120_163521  ls
+ 1124  20181120_163523  pwd
+ 1125  20181120_163538  cd ..
+ 1126  20181120_163541  ls
+ 1127  20181120_163710  cd Log_dir/
+ 1128  20181120_163711  pwd
+ 1129  20181120_163731  cd ..
+ 1130  20181120_163738  ls
+ 1131  20181120_163743  vi Cascades_TensorFlow_Test.sh 
+ 1132  20181120_163929  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1133  20181120_163939  checkjob 313443
+ 1134  20181120_171332  cd ~
+ 1135  20181120_171333  ls
+ 1136  20181120_172221  checkjob 313443
+ 1137  20181120_172652  cd ~
+ 1138  20181120_172653  ls
+ 1139  20181120_172655  cd anaconda3/
+ 1140  20181120_172656  ls
+ 1141  20181120_172659  cd bin
+ 1142  20181120_172700  ks
+ 1143  20181120_172702  ls
+ 1144  20181120_172723  module source list
+ 1145  20181120_172754  cd ~
+ 1146  20181120_172800  checkjob 313443
+ 1147  20181120_173328  cd ~
+ 1148  20181120_173331  ls
+ 1149  20181120_173344  cat Cascades_TensorFlow_Test.sh.e313443
+ 1150  20181120_173538  cd pointer-generator-master/
+ 1151  20181120_173539  ls
+ 1152  20181120_173546  vim run_summarization.py 
+ 1153  20181120_183337  ls
+ 1154  20181120_183341  cd pointer-generator-master/
+ 1155  20181120_183341  ls
+ 1156  20181120_183346  vim run_summarization.py 
+ 1157  20181120_183602  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1158  20181120_184202  checkjob 313463
+ 1159  20181120_184422  cd ~
+ 1160  20181120_184424  ls
+ 1161  20181120_184443  cat Cascades_TensorFlow_Test.sh.e313463
+ 1162  20181120_184509  cd pointer-generator-master/
+ 1163  20181120_184515  vi run_summarization.py 
+ 1164  20181120_184608  vi data.py 
+ 1165  20181120_184909  ls
+ 1166  20181120_184921  ls -al
+ 1167  20181120_184926  cd __init__.py 
+ 1168  20181120_184930  vi __init__.py 
+ 1169  20181120_184940  vi attention_decoder.py 
+ 1170  20181120_185034  vi batcher.py 
+ 1171  20181120_185138  vi beam_search.py 
+ 1172  20181120_185449  vi data.py 
+ 1173  20181120_185520  vi decode.py 
+ 1174  20181120_185933  vi inspect_checkpoint.py 
+ 1175  20181120_190032  vi model.py 
+ 1176  20181120_190139  vi util.py 
+ 1177  20181120_190154  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1178  20181120_190810  checkjob 313471
+ 1179  20181120_190814  cd ~
+ 1180  20181120_190815  ls
+ 1181  20181120_190826  cat Cascades_TensorFlow_Test.sh.o313471
+ 1182  20181120_190839  cat Cascades_TensorFlow_Test.sh.e313471
+ 1183  20181120_191030  cd pointer-generator-master/
+ 1184  20181120_191033  vi batcher.py 
+ 1185  20181120_191118  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1186  20181120_203354  ls
+ 1187  20181120_203356  cd pointer-generator-master/
+ 1188  20181120_203400  cd ~
+ 1189  20181120_203420  cat Cascades_TensorFlow_Test.sh.e313476
+ 1190  20181120_203955  source activate tensorenv
+ 1191  20181120_204020  module list
+ 1192  20181120_204119  conda list
+ 1193  20181120_204508  conda install --name tensorenv pyrouge==1.5.5
+ 1194  20181120_204526  conda install --name tensorenv pyrouge
+ 1195  20181120_204602  pip install pyrouge
+ 1196  20181120_204625  module list
+ 1197  20181120_204630  conda list
+ 1198  20181120_204706  pip install pyrouge==1.5.5
+ 1199  20181120_204722  cd pointer-generator-master/
+ 1200  20181120_204724  ls
+ 1201  20181120_204744  qsub -k oe Cascades_TensorFlow_Test.sh
+ 1202  20181120_211048  ls
+ 1203  20181120_211103  cat Cascades_TensorFlow_Test.sh.e313513
+ 1204  20181120_211130  cd pointer-generator-master/
+ 1205  20181120_211216  vi data.py 
+ 1206  20181120_211540  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1207  20181120_214113  ls
+ 1208  20181120_214126  cat Cascades_TensorFlow_Test.sh.e313513
+ 1209  20181120_214147  checkjob 313567
+ 1210  20181121_012156  ls
+ 1211  20181121_012255  cat Cascades_TensorFlow_Test.sh.e313591
+ 1212  20181121_012825  cd pointer-generator-master/
+ 1213  20181121_012827  ls
+ 1214  20181121_012831  vi data.py 
+ 1215  20181121_000311  ls
+ 1216  20181121_000329  cat  Cascades_TensorFlow_Test.sh.e313567
+ 1217  20181121_000412  cd pointer-generator-master/
+ 1218  20181121_000414  ls
+ 1219  20181121_002715  vi data.py 
+ 1220  20181121_003253  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1221  20181121_004829  checkjob 313586
+ 1222  20181121_004850  cd ~
+ 1223  20181121_004851  ls
+ 1224  20181121_004903  cat Cascades_TensorFlow_Test.sh.e313586
+ 1225  20181121_005016  vi Cascades_TensorFlow_Test.
+ 1226  20181121_005022  cat Cascades_TensorFlow_Test.sh
+ 1227  20181121_005034  cd pointer-generator-master/
+ 1228  20181121_005040  vi Cascades_TensorFlow_Test.sh 
+ 1229  20181121_005150  cd finished_files/
+ 1230  20181121_005151  ls
+ 1231  20181121_005201  pwd
+ 1232  20181121_005225  cd ..
+ 1233  20181121_005228  vi Cascades_TensorFlow_Test.sh 
+ 1234  20181121_005502  vi data.py 
+ 1235  20181121_005757  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1236  20181121_012941  ls
+ 1237  20181121_012943  cd pointer-generator-master/
+ 1238  20181121_012946  ls
+ 1239  20181121_012951  cat data.py 
+ 1240  20181121_012959  vi data.py 
+ 1241  20181121_013036  vim data.py 
+ 1242  20181121_013131  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1243  20181121_013258  checkjob 313653
+ 1244  20181121_013304  cd ..
+ 1245  20181121_013305  ls
+ 1246  20181121_013313  cat  Cascades_TensorFlow_Test.sh.e313653
+ 1247  20181121_020328  ls
+ 1248  20181121_020340  cat Cascades_TensorFlow_Test.sh.e313653
+ 1249  20181121_163143  ls
+ 1250  20181121_163150  cd pointer-generator-master/
+ 1251  20181121_163152  ls
+ 1252  20181121_164359  vi data.py 
+ 1253  20181121_164633  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1254  20181121_165356  checkjob 313937
+ 1255  20181121_182223  cd ~
+ 1256  20181121_182224  ls
+ 1257  20181121_182234  cat  Cascades_TensorFlow_Test.sh.e313937
+ 1258  20181121_182324  cd pointer-generator-master/
+ 1259  20181121_182326  ls
+ 1260  20181121_182330  cat data.py 
+ 1261  20181121_182414  vim data.py 
+ 1262  20181121_182528  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1263  20181121_190426  checkjob 314065
+ 1264  20181121_190430  cd ~
+ 1265  20181121_190431  ls
+ 1266  20181121_190443  cat Cascades_TensorFlow_Test.sh.e314065
+ 1267  20181121_190548  cd pointer-generator-master/
+ 1268  20181121_190549  ls
+ 1269  20181121_190552  vi data.py 
+ 1270  20181121_190802  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1271  20181121_192036  checkjob 314074
+ 1272  20181121_192038  cd ~
+ 1273  20181121_192039  ls
+ 1274  20181121_192048  cat Cascades_TensorFlow_Test.sh.e314074
+ 1275  20181121_192107  cd pointer-generator-master/
+ 1276  20181121_192108  ls
+ 1277  20181121_192112  vi data.py 
+ 1278  20181121_192131  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1279  20181121_204706  ls
+ 1280  20181121_204715  cat Cascades_TensorFlow_Test.sh.e314075
+ 1281  20181121_205455  cd pointer-generator-master/
+ 1282  20181121_205531  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1283  20181121_212044  cd ~
+ 1284  20181121_212045  ls
+ 1285  20181121_212059  cat Cascades_TensorFlow_Test.sh.e314085
+ 1286  20181121_212536  cd pointer-generator-master/
+ 1287  20181121_212538  vi data.py 
+ 1288  20181121_213607  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1289  20181121_214401  cd ~
+ 1290  20181121_214403  ls
+ 1291  20181121_214416  cat Cascades_TensorFlow_Test.sh.e314090
+ 1292  20181121_214425  cd pointer-generator-master/
+ 1293  20181121_214426  ls
+ 1294  20181121_214429  vi data.py 
+ 1295  20181123_174346  ls
+ 1296  20181123_174347  cd pointer-generator-master/
+ 1297  20181123_174348  ls
+ 1298  20181123_174351  vi data.py 
+ 1299  20181123_174515  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1300  20181123_174650  checkjob 314851
+ 1301  20181123_193117  ls
+ 1302  20181123_193122  ls -al
+ 1303  20181123_193147  checkjob 314851
+ 1304  20181123_203507  cd ~
+ 1305  20181123_203509  ls
+ 1306  20181123_203521  cat Cascades_TensorFlow_Test.sh.e314851
+ 1307  20181123_203825  cd pointer-generator-master/
+ 1308  20181123_203826  ls
+ 1309  20181123_203829  vi data.py 
+ 1310  20181123_210153  cd ..
+ 1311  20181123_210156  ls
+ 1312  20181123_210212  cd ~
+ 1313  20181123_210214  l
+ 1314  20181123_210215  ls
+ 1315  20181123_210227  cd pointer_summarizer-master/
+ 1316  20181123_210410  cd ~
+ 1317  20181123_210412  ls
+ 1318  20181123_210417  cd pointer_summarizer-master/
+ 1319  20181123_210418  ls
+ 1320  20181123_210434  cd training_ptr_gen/
+ 1321  20181123_210435  ls
+ 1322  20181123_210445  cd data_util/
+ 1323  20181123_210446  ls
+ 1324  20181123_210452  vi config.py 
+ 1325  20181123_210514  cd ..
+ 1326  20181123_210516  ls
+ 1327  20181124_032941  cd pointer_summarizer-master/
+ 1328  20181124_032942  ls
+ 1329  20181124_032951  cd training_ptr_gen/
+ 1330  20181124_032953  ls
+ 1331  20181124_033115  cd data_util/
+ 1332  20181124_033116  ls
+ 1333  20181124_033124  vi config.py 
+ 1334  20181124_033235  cd ..
+ 1335  20181124_033236  ls
+ 1336  20181124_033245  cd ..
+ 1337  20181124_033247  ls
+ 1338  20181124_033312  cd training_ptr_gen/
+ 1339  20181124_033344  ls
+ 1340  20181124_033349  cd data_util/
+ 1341  20181124_033350  ls
+ 1342  20181124_033354  vi config.py 
+ 1343  20181124_033420  cd ../..
+ 1344  20181124_033422  ls
+ 1345  20181124_033428  mkdir log
+ 1346  20181124_033429  ls
+ 1347  20181124_033446  cd ..
+ 1348  20181124_033448  ls
+ 1349  20181124_033458  cd pointer_summarizer-master/
+ 1350  20181124_033459  ls
+ 1351  20181124_033510  vi start_train.sh 
+ 1352  20181124_033534  qsub -k oe start_train.sh
+ 1353  20181124_033544  checkjob 314897
+ 1354  20181124_154349  ls
+ 1355  20181124_154352  ls -al
+ 1356  20181124_154420  cat  start_train.sh.e314897
+ 1357  20181124_154708  cd anaconda3/
+ 1358  20181124_154709  ls
+ 1359  20181124_154716  cd bin
+ 1360  20181124_154717  ls
+ 1361  20181124_155512  conda list
+ 1362  20181124_155704  source activate tensorenv
+ 1363  20181124_155717  conda list
+ 1364  20181124_155731  pip install torch
+ 1365  20181124_155827  conda list
+ 1366  20181124_155832  cd ~
+ 1367  20181124_155847  cd pointer_summarizer-master/
+ 1368  20181124_155849  ls
+ 1369  20181124_155857  vi start_train.sh
+ 1370  20181124_160031  qsub -k oe start_train.sh
+ 1371  20181124_160116  ls
+ 1372  20181124_160126  qsub -k oe start_train.sh
+ 1373  20181124_160135  vi start_train.sh 
+ 1374  20181124_160314  qsub -k oe start_train.sh
+ 1375  20181124_160329  vi start_train.sh 
+ 1376  20181124_160711  qsub -k oe start_train.sh
+ 1377  20181124_160844  checkjob 315118
+ 1378  20181124_170321  ls -al
+ 1379  20181124_172558  checkjob 315118
+ 1380  20181124_172607  cd ~
+ 1381  20181124_172609  ls
+ 1382  20181124_172617  cat start_train.sh.e315118
+ 1383  20181124_172713  source activate tensorenv
+ 1384  20181124_172721  conda list
+ 1385  20181124_172737  pip install pathlib2
+ 1386  20181124_172756  cd pointer_summarizer-master/
+ 1387  20181124_172758  ls
+ 1388  20181124_172805  qsub -k oe start_train.sh
+ 1389  20181124_194730  ls
+ 1390  20181124_194743  cat start_train.sh.e315130
+ 1391  20181124_194825  cd training_ptr_gen/data_util
+ 1392  20181124_194842  cd pointer_summarizer-master/training_ptr_gen/data_util
+ 1393  20181124_194843  ls
+ 1394  20181124_194849  vi batcher.py 
+ 1395  20181124_194906  cd ../../
+ 1396  20181124_194907  ls
+ 1397  20181124_194918  qsub -k oe start_train.sh
+ 1398  20181124_195643  cd ..
+ 1399  20181124_195644  ls
+ 1400  20181124_195658  conda env list
+ 1401  20181124_195715  source activate tfenv123
+ 1402  20181124_195719  conda list
+ 1403  20181124_200028  pip install cv2
+ 1404  20181124_200123  pip install matplotlib
+ 1405  20181124_200345  pip install opencv-python
+ 1406  20181124_200355  conda list
+ 1407  20181124_200417  pip install scipy
+ 1408  20181124_200447  pip upgrade tensorflow=1.3.0
+ 1409  20181124_200550  pip install tensorflow=1.3.0 --upgrade
+ 1410  20181124_200558  pip install tensorflow==1.3.0 --upgrade
+ 1411  20181124_201132  ls
+ 1412  20181124_201143  cat start_train.sh.e315146
+ 1413  20181124_201203  cd pointer_summarizer-master/
+ 1414  20181124_201205  ls
+ 1415  20181124_201223  cd training_ptr_gen/
+ 1416  20181124_201224  ls
+ 1417  20181124_201229  cd data_util/
+ 1418  20181124_201229  ls
+ 1419  20181124_201237  vi config.py 
+ 1420  20181124_201938  cd ../..
+ 1421  20181124_201939  ls
+ 1422  20181124_201948  qsub -k oe  start_train.sh
+ 1423  20181124_201954  cd ~
+ 1424  20181124_201957  cd mask-rcnn/
+ 1425  20181124_201958  ls
+ 1426  20181124_202012  conda env list
+ 1427  20181124_202028  source activate tfenv123
+ 1428  20181124_202034  conda list
+ 1429  20181124_202115  pip install tensorflow==1.3.0 --upgrade
+ 1430  20181124_202421  module list
+ 1431  20181124_202430  conda list
+ 1432  20181124_202449  pip install Pillow
+ 1433  20181124_202533  pip install scikit-image
+ 1434  20181124_203409  ls
+ 1435  20181124_215828  cd l
+ 1436  20181124_215830  l
+ 1437  20181124_215839  bbjk
+ 1438  20181124_221838  ls
+ 1439  20181124_221848  cat  start_train.sh.e315149
+ 1440  20181124_221923  cat start_train.sh.e315146
+ 1441  20181124_222011  cd pointer_summarizer-master/
+ 1442  20181124_222012  ls
+ 1443  20181124_222017  cd training_ptr_gen/
+ 1444  20181124_222018  ls
+ 1445  20181124_222023  cd data_util/
+ 1446  20181124_222024  ls
+ 1447  20181124_222043  vi config.py 
+ 1448  20181124_222147  cd ..
+ 1449  20181124_222148  ls
+ 1450  20181124_222200  vi log_util.py 
+ 1451  20181124_222212  cd ..
+ 1452  20181124_222213  ls
+ 1453  20181124_222217  cd finished_files/
+ 1454  20181124_222218  ls
+ 1455  20181124_222528  cd ..
+ 1456  20181124_222529  ls
+ 1457  20181124_222538  qsub -k oe start_train.sh
+ 1458  20181124_222901  cd ~
+ 1459  20181124_222902  ls
+ 1460  20181124_222913  cat start_train.sh.e315161
+ 1461  20181124_223327  ls
+ 1462  20181124_223332  cd pointer_summarizer-master/
+ 1463  20181124_223333  ls
+ 1464  20181124_223338  cd training_ptr_gen/
+ 1465  20181124_223339  ls
+ 1466  20181124_223353  cd data_util/
+ 1467  20181124_223354  ls
+ 1468  20181124_223358  vi config.py 
+ 1469  20181124_223431  cd ../..
+ 1470  20181124_223433  ls
+ 1471  20181124_223442  qsub -k oe start_train.sh
+ 1472  20181124_223721  cd ~
+ 1473  20181125_011059  ls
+ 1474  20181125_011110  cat Cascades_TensorFlow_Test.sh.e314851
+ 1475  20181125_011345  source activate tensorenv
+ 1476  20181125_011349  python
+ 1477  20181125_012606  cd cd ls
+ 1478  20181124_224442  ls
+ 1479  20181124_224502  cat start_train.sh.e315163
+ 1480  20181124_224525  cd pointer_summarizer-master/
+ 1481  20181124_224526  ls
+ 1482  20181124_224529  cd training_ptr_gen/
+ 1483  20181124_224531  ls
+ 1484  20181124_224538  cd data_util/
+ 1485  20181124_224538  ls
+ 1486  20181124_224549  cd ../dataset
+ 1487  20181124_224553  cd news
+ 1488  20181124_224600  cd finished_files/
+ 1489  20181124_224616  ls
+ 1490  20181124_224619  cd ~
+ 1491  20181124_224620  ls
+ 1492  20181124_224624  cd pointer_summarizer-master/
+ 1493  20181124_224625  ls
+ 1494  20181124_224629  cd training_ptr_gen/
+ 1495  20181124_224630  ls
+ 1496  20181124_224636  cd data_
+ 1497  20181124_224640  cd data_util/
+ 1498  20181124_224641  ls
+ 1499  20181124_224654  cd ../dataset/news/finished_files
+ 1500  20181124_224700  ls
+ 1501  20181124_224809  pwd
+ 1502  20181124_224831  ls
+ 1503  20181124_224835  cd ~
+ 1504  20181124_224836  ls
+ 1505  20181124_224840  cd pointer_summarizer-master/
+ 1506  20181124_224841  ls
+ 1507  20181124_224843  cd training_ptr_gen/
+ 1508  20181124_224844  ls
+ 1509  20181124_224848  cd data_util/
+ 1510  20181124_224849  ls
+ 1511  20181124_224852  cd /home/ashinmarin/pointer_summarizer-master/training_ptr_gen/dataset/news
+ 1512  20181124_224854  ls
+ 1513  20181124_225014  cd ~
+ 1514  20181124_225046  cd pointer_summarizer-master/
+ 1515  20181124_225048  ls
+ 1516  20181124_225052  cd training_ptr_gen/
+ 1517  20181124_225055  ls
+ 1518  20181124_225058  cd data
+ 1519  20181124_225108  cd data_util/
+ 1520  20181124_225109  ls
+ 1521  20181124_225114  vi config.py 
+ 1522  20181124_225154  cd ~
+ 1523  20181124_225155  ls
+ 1524  20181124_225202  cd pointer_summarizer-master/
+ 1525  20181124_225203  ls
+ 1526  20181124_225210  qsub -k oe start_train.sh
+ 1527  20181124_225337  cd ~
+ 1528  20181124_225339  ls
+ 1529  20181124_225349  cat start_train.sh.e315164
+ 1530  20181124_225813  cd mask-rcnn/
+ 1531  20181124_225815  ls
+ 1532  20181124_225841  module env list
+ 1533  20181124_225924  conda env list
+ 1534  20181124_225943  source activate tfenv123
+ 1535  20181124_225950  conda list
+ 1536  20181124_230057  pip install cython
+ 1537  20181124_230112  conda list
+ 1538  20181124_230145  pip install keras==2.0.8
+ 1539  20181124_230155  conda list
+ 1540  20181124_230233  pip install h5py
+ 1541  20181124_230246  pip install imgaug
+ 1542  20181124_230309  pip install IPython[all]
+ 1543  20181124_230608  conda list
+ 1544  20181124_232155  ls
+ 1545  20181124_232207  cd mask-rcnn-coco/
+ 1546  20181124_232209  ls
+ 1547  20181124_232302  cd ..
+ 1548  20181124_232305  ls
+ 1549  20181124_232327  cd ..
+ 1550  20181124_232329  ls
+ 1551  20181124_233204  cd mask-rcnn/
+ 1552  20181124_233206  la
+ 1553  20181124_233208  ls
+ 1554  20181124_233219  vi mask_rcnn.py 
+ 1555  20181124_234447  python
+ 1556  20181124_234511  python mask_rcnn.py --mask-rcnn mask-rcnn-coco --image images/example_01.jpg
+ 1557  20181124_234900  ls
+ 1558  20181124_234903  vi start_train.sh 
+ 1559  20181124_234944  ls
+ 1560  20181124_234949  vi Cascades_TensorFlow_Test.sh 
+ 1561  20181124_235237  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1562  20181124_235453  cd ~
+ 1563  20181124_235455  ls
+ 1564  20181124_235508  cat Cascades_TensorFlow_Test.sh.e315165
+ 1565  20181124_235540  source deactivate tfenv123
+ 1566  20181124_235545  cd mask-rcnn/
+ 1567  20181124_235546  ls
+ 1568  20181124_235550  vi Cascades_TensorFlow_Test.sh 
+ 1569  20181124_235841  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1570  20181124_235843  cd ~
+ 1571  20181124_235844  ls
+ 1572  20181124_235910  checkjob 315166\
+ 1573  20181125_000007  ls
+ 1574  20181125_000014  cat Cascades_TensorFlow_Test.sh.e315166
+ 1575  20181125_000028  pip install cv2
+ 1576  20181125_000123  pip install opencv-python
+ 1577  20181125_000242  cd mask-rcnn/
+ 1578  20181125_000243  ls
+ 1579  20181125_000252  qsub -k oe Cascades_TensorFlow_Test.sh
+ 1580  20181125_000332  cd ~
+ 1581  20181125_000333  ls
+ 1582  20181125_000345  cat Cascades_TensorFlow_Test.sh.e315167
+ 1583  20181125_030143  checkjob 315191
+ 1584  20181125_030155  cd mas
+ 1585  20181125_030158  cd mask-rcnn/
+ 1586  20181125_030159  ls
+ 1587  20181125_030353  conda create -n cvpy2env python=2.7
+ 1588  20181125_030559  source activate cvpy2env
+ 1589  20181125_030608  pip install matplotlib
+ 1590  20181125_030721  pip install numpy
+ 1591  20181125_030728  ls
+ 1592  20181125_030733  which python
+ 1593  20181125_030741  vi Cascades_TensorFlow_Test.sh 
+ 1594  20181125_030915  pip install cv2
+ 1595  20181125_031020  pip install opencv-python==3.4.3
+ 1596  20181125_031041  pip install opencv-python==3.4.3.18
+ 1597  20181125_031052  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1598  20181125_031059  checkjob 315192
+ 1599  20181125_031137  cd ~
+ 1600  20181125_031140  ls -ltr
+ 1601  20181125_031158  cat Cascades_TensorFlow_Test.sh.e315192
+ 1602  20181125_031234  cat Cascades_TensorFlow_Test.sh.e315191
+ 1603  20181125_031341  cat Cascades_TensorFlow_Test.sh.e315192
+ 1604  20181125_012944  ls
+ 1605  20181125_012951  cd pointer_summarizer-master/
+ 1606  20181125_012953  ls
+ 1607  20181125_012957  cd ~
+ 1608  20181125_013000  cd pointer-generator-master/
+ 1609  20181125_013001  ls
+ 1610  20181125_013034  vi data.py 
+ 1611  20181125_014228  cd ..
+ 1612  20181125_014230  ls
+ 1613  20181125_014237  cd pointer_summarizer-master/
+ 1614  20181125_014238  ls
+ 1615  20181125_014243  cd ~
+ 1616  20181125_014247  cd pointer-generator-master/
+ 1617  20181125_014248  ls
+ 1618  20181125_014309  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1619  20181125_014643  checkjob 315173
+ 1620  20181125_014656  cd ~
+ 1621  20181125_014657  ls
+ 1622  20181125_014713  cat Cascades_TensorFlow_Test.sh.e315173
+ 1623  20181125_015023  ls
+ 1624  20181125_015102  cat Cascades_TensorFlow_Test.sh.e315173
+ 1625  20181125_015239  ls
+ 1626  20181125_015245  cd pointer-generator-master/
+ 1627  20181125_015247  ls
+ 1628  20181125_015406  vi data.py 
+ 1629  20181125_015511  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1630  20181125_020538  ls
+ 1631  20181125_020604  cat Cascades_TensorFlow_Test.sh.e315176
+ 1632  20181125_020643  cd pointer-generator-master/
+ 1633  20181125_020651  vi data.py 
+ 1634  20181125_021023  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1635  20181125_021026  cd ~
+ 1636  20181125_021029  ls -ltr
+ 1637  20181125_021217  cat Cascades_TensorFlow_Test.sh.e315180
+ 1638  20181125_021359  cd pointer-generator-master/
+ 1639  20181125_021403  vi data.py 
+ 1640  20181125_021658  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1641  20181125_021702  cd ~
+ 1642  20181125_021739  ls -ltr
+ 1643  20181125_021753  cat  Cascades_TensorFlow_Test.sh.e315181
+ 1644  20181125_022001  conda create -n tensorpy2env python=2.7
+ 1645  20181125_022322  source activate tensorpy2env
+ 1646  20181125_022347  cd pointer-generator-master/
+ 1647  20181125_022356  vi Cascades_TensorFlow_Test.sh 
+ 1648  20181125_022446  ls
+ 1649  20181125_022452  vi batcher.py 
+ 1650  20181125_022509  vi Cascades_TensorFlow_Test.sh 
+ 1651  20181125_022549  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1652  20181125_022656  checkjob 315183
+ 1653  20181125_022701  cd ~
+ 1654  20181125_022703  ls
+ 1655  20181125_022723  cat Cascades_TensorFlow_Test.sh.e315183
+ 1656  20181125_022749  conda list
+ 1657  20181125_022810  which python
+ 1658  20181125_022826  cd pointer-generator-master/
+ 1659  20181125_022830  vi Cascades_TensorFlow_Test.sh 
+ 1660  20181125_022902  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1661  20181125_022922  checkjob 315186
+ 1662  20181125_022958  cd ~
+ 1663  20181125_023001  ls -ltr
+ 1664  20181125_023014  cat Cascades_TensorFlow_Test.sh.e315186
+ 1665  20181125_023050  pip install tensorflow==1.1
+ 1666  20181125_023213  cd pointer-generator-master/
+ 1667  20181125_023224  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1668  20181125_023411  checkjob 315187
+ 1669  20181125_023415  cd ~
+ 1670  20181125_023418  ls -ltr
+ 1671  20181125_023429  cat Cascades_TensorFlow_Test.sh.e315187
+ 1672  20181125_023444  pip install pyrouge
+ 1673  20181125_023455  cd pointer-generator-master/
+ 1674  20181125_023505  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1675  20181125_023605  checkjob 315190
+ 1676  20181125_023609  cd ~
+ 1677  20181125_023611  ls -ltr
+ 1678  20181125_023619  cat Cascades_TensorFlow_Test.sh.e315190
+ 1679  20181125_023634  cd pointer-generator-master/
+ 1680  20181125_023635  ls
+ 1681  20181125_023641  vi data.py
+ 1682  20181125_023834  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1683  20181125_024133  checkjob 315191
+ 1684  20181125_150253  ls -ltr
+ 1685  20181125_150309  cat Cascades_TensorFlow_Test.sh.e315191
+ 1686  20181125_150342  ls -ltr
+ 1687  20181125_150354  cat Cascades_TensorFlow_Test.sh.o315191
+ 1688  20181125_184811  ls -ltr
+ 1689  20181125_184820  cat Cascades_TensorFlow_Test.sh.e315191
+ 1690  20181125_184826  ls
+ 1691  20181125_184926  conda env list
+ 1692  20181125_184950  source activate tfenv123
+ 1693  20181125_184956  conda list
+ 1694  20181125_191930  ls
+ 1695  20181125_193309  ls -ltr
+ 1696  20181125_194728  ls
+ 1697  20181125_200104  cd cnn-dailymail-master/
+ 1698  20181125_200105  ls
+ 1699  20181125_200110  cd finished_files/
+ 1700  20181125_200111  ls
+ 1701  20181125_200127  cd ..
+ 1702  20181125_200130  cd cnn-dailymail-master/
+ 1703  20181125_200131  ls
+ 1704  20181125_200135  cd finished_files/
+ 1705  20181125_200136  ls
+ 1706  20181125_200144  vi test.bin
+ 1707  20181125_200202  cd ..
+ 1708  20181125_200207  cd finished_files/
+ 1709  20181125_200211  cd chunked/
+ 1710  20181125_200212  ls
+ 1711  20181125_200218  cat test_000.bin 
+ 1712  20181125_201103  :q
+ 1713  20181125_201105  ls
+ 1714  20181125_230031  cd Mask_RCNN-master/
+ 1715  20181125_230033  LS
+ 1716  20181125_230035  ls
+ 1717  20181125_230313  conda env list
+ 1718  20181125_230325  source activate tfenv123
+ 1719  20181125_230332  which python
+ 1720  20181125_230353  vi Cascades_TensorFlow_Test.sh 
+ 1721  20181125_230528  qsub -k oe Cascades_TensorFlow_Test.sh
+ 1722  20181125_230538  checkjob 315394
+ 1723  20181125_230700  cd ~
+ 1724  20181125_230702  ls
+ 1725  20181125_230723  cat Cascades_TensorFlow_Test.sh.e315394
+ 1726  20181125_232003  cd Mask_RCNN-master/
+ 1727  20181125_232004  ls
+ 1728  20181125_232011  cd images/
+ 1729  20181125_232013  ls
+ 1730  20181125_232632  cdcd ~
+ 1731  20181125_232634  cd ~
+ 1732  20181125_232638  cd Mask_RCNN-master/
+ 1733  20181125_232641  vi Cascades_TensorFlow_Test.sh 
+ 1734  20181125_232822  qsub -k oe Cascades_TensorFlow_Test.sh
+ 1735  20181125_232832  checkjob 315426
+ 1736  20181125_233127  cd ~
+ 1737  20181125_233129  ls
+ 1738  20181125_233140  cat Cascades_TensorFlow_Test.sh.e315426
+ 1739  20181125_233152  pip install gluconcv
+ 1740  20181125_233209  pip install gluoncv
+ 1741  20181125_233218  cd Mask_RCNN-master/
+ 1742  20181125_233226  qsub -k oe Cascades_TensorFlow_Test.sh
+ 1743  20181125_233230  cd ~
+ 1744  20181125_233233  ls
+ 1745  20181125_233241  cat Cascades_TensorFlow_Test.sh.e315191
+ 1746  20181125_233251  ls
+ 1747  20181125_233258  cat Cascades_TensorFlow_Test.sh.o315191
+ 1748  20181125_233301  ls
+ 1749  20181125_233321  checkjob 315191
+ 1750  20181125_233328  ls
+ 1751  20181125_233338  ls -ltr
+ 1752  20181125_233351  cat Cascades_TensorFlow_Test.sh.e315428
+ 1753  20181125_233419  pip install mxnet/mxnet-cu90 --pre
+ 1754  20181125_233530  pip install mxnet-cu92
+ 1755  20181125_233726  cd Mask_RCNN-master/
+ 1756  20181125_233733  qsub -k oe Cascades_TensorFlow_Test.sh
+ 1757  20181125_234355  checkjob 315429
+ 1758  20181125_234358  cd ~
+ 1759  20181125_234416  cat Cascades_TensorFlow_Test.sh.e315429
+ 1760  20181125_234511  echo $LD_LIBRARY_PATH
+ 1761  20181125_234627  pip uninstall mxnet-cu92
+ 1762  20181125_234642  pip install mxnet-cu80
+ 1763  20181125_234739  cd Mask_RCNN-master/
+ 1764  20181125_234744  qsub -k oe Cascades_TensorFlow_Test.sh
+ 1765  20181125_235115  checkjob 315432
+ 1766  20181125_235124  cd ~
+ 1767  20181125_235127  ls -ltr
+ 1768  20181125_235133  cat Cascades_TensorFlow_Test.sh.e315432
+ 1769  20181126_001341  cd Mask_RCNN-master/
+ 1770  20181126_001346  vi Cascades_TensorFlow_Test.sh 
+ 1771  20181126_001631  ls
+ 1772  20181126_001636  cd train
+ 1773  20181126_001639  pwd
+ 1774  20181126_001655  cd ..
+ 1775  20181126_001657  ls
+ 1776  20181126_001659  pwd
+ 1777  20181126_001722  vi Cascades_TensorFlow_Test.sh 
+ 1778  20181126_001804  cd samples/
+ 1779  20181126_001805  ls
+ 1780  20181126_001809  cd coco/
+ 1781  20181126_001810  ls
+ 1782  20181126_001820  cd ../..
+ 1783  20181126_001821  ls
+ 1784  20181126_001826  vi Cascades_TensorFlow_Test.sh 
+ 1785  20181126_001912  qsub -k oe Cascades_TensorFlow_Test.sh
+ 1786  20181126_001922  checkjob 315448
+ 1787  20181126_002024  cd ~
+ 1788  20181126_002027  ls -ltr
+ 1789  20181126_002034  cat Cascades_TensorFlow_Test.sh.e315448
+ 1790  20181126_002223  cd Mask_RCNN-master/
+ 1791  20181126_002228  vi Cascades_TensorFlow_Test.sh 
+ 1792  20181126_002259  qsub -k oe Cascades_TensorFlow_Test.sh
+ 1793  20181126_002307  checkjob 315450
+ 1794  20181126_002354  cd ~
+ 1795  20181126_002357  ls -ltr
+ 1796  20181126_002404  cat Cascades_TensorFlow_Test.sh.e315450
+ 1797  20181126_002624  cd Mask_RCNN-master/
+ 1798  20181126_002626  cd coco-master/
+ 1799  20181126_002627  ls
+ 1800  20181126_002711  cd ../..
+ 1801  20181126_002712  ls
+ 1802  20181126_002715  cd Mask_RCNN-master/
+ 1803  20181126_002716  ls
+ 1804  20181126_002729  vi coco-master/
+ 1805  20181126_002740  cd coco-master/
+ 1806  20181126_002742  ls
+ 1807  20181126_002745  cd PythonAPI/
+ 1808  20181126_002746  ls
+ 1809  20181126_002750  pwd
+ 1810  20181126_002808  cd ../..
+ 1811  20181126_002809  ls
+ 1812  20181126_002811  vi Cascades_TensorFlow_Test.sh 
+ 1813  20181126_002920  qsub -k oe Cascades_TensorFlow_Test.sh
+ 1814  20181126_003001  checkjob 315451
+ 1815  20181126_003004  cd ~
+ 1816  20181126_003007  ls -ltr
+ 1817  20181126_003021  cat Cascades_TensorFlow_Test.sh.e315451
+ 1818  20181126_003114  cd Mask_RCNN-master/
+ 1819  20181126_003117  cd coco-master/
+ 1820  20181126_003119  cd PythonAPI/
+ 1821  20181126_003120  make
+ 1822  20181126_003246  cd ../
+ 1823  20181126_003247  ls
+ 1824  20181126_003250  cd ..
+ 1825  20181126_003256  qsub -k oe Cascades_TensorFlow_Test.sh
+ 1826  20181126_003349  checkjob 315453
+ 1827  20181126_003359  cd ~
+ 1828  20181126_003400  ls
+ 1829  20181126_003455  checkjob 315453
+ 1830  20181126_021844  ls -ltr
+ 1831  20181126_021852  cat Cascades_TensorFlow_Test.sh.e315453
+ 1832  20181126_022002  cd Mask_RCNN-master/
+ 1833  20181126_022003  ls
+ 1834  20181126_022008  conda env list
+ 1835  20181126_022027  vi Cascades_TensorFlow_Test.sh 
+ 1836  20181126_022208  cd coco-master/
+ 1837  20181126_022213  cd PythonAPI/
+ 1838  20181126_022217  vi Cascades_TensorFlow_Test.sh 
+ 1839  20181126_022303  qsub -k oe Cascades_TensorFlow_Test.sh
+ 1840  20181126_022545  checkjob 315460
+ 1841  20181126_022549  cd ~
+ 1842  20181126_022552  ls -ltr
+ 1843  20181126_022613  cat Cascades_TensorFlow_Test.sh.e315460
+ 1844  20181126_022625  cat Cascades_TensorFlow_Test.sh.o315460
+ 1845  20181126_022635  cat Cascades_TensorFlow_Test.sh.e315191
+ 1846  20181126_022736  cd pointer_summarizer-master/
+ 1847  20181126_022742  pcd ..
+ 1848  20181126_022745  cd ..
+ 1849  20181126_022749  cd pointer-generator-master/
+ 1850  20181126_022750  ls
+ 1851  20181126_022808  ls -ltr
+ 1852  20181126_022825  vi Cascades_TensorFlow_Test.sh 
+ 1853  20181126_022850  cd ~
+ 1854  20181126_022852  ls 
+ 1855  20181126_022902  checkjob 315191
+ 1856  20181126_022930  cd pointer-generator-master/
+ 1857  20181126_022933  ls
+ 1858  20181126_022938  vi Cascades_TensorFlow_Test.sh 
+ 1859  20181126_023000  cd Log_dir/
+ 1860  20181126_023001  ls
+ 1861  20181126_023004  cd myexperiment/
+ 1862  20181126_023005  ls
+ 1863  20181126_023007  cd train/
+ 1864  20181126_023009  ls
+ 1865  20181126_023738  cd ..
+ 1866  20181126_023748  cd Log_dir/
+ 1867  20181126_023750  pwd
+ 1868  20181126_023800  cd ..
+ 1869  20181126_023804  cd Cascades_TensorFlow_Test.sh 
+ 1870  20181126_023807  vi Cascades_TensorFlow_Test.sh 
+ 1871  20181126_024203  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1872  20181126_024216  checkjob 315461
+ 1873  20181126_024938  cd ..
+ 1874  20181126_024941  cd Mask_RCNN-master/
+ 1875  20181126_024942  ls
+ 1876  20181126_024946  vi Cascades_TensorFlow_Test.sh 
+ 1877  20181126_025136  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1878  20181126_025241  checkjob 315462
+ 1879  20181126_025243  cd ~
+ 1880  20181126_025246  ls -ltr
+ 1881  20181126_025257  cat Cascades_TensorFlow_Test.sh.e315462
+ 1882  20181126_025328  cd Mask_RCNN-master/
+ 1883  20181126_025331  cd coco-master/
+ 1884  20181126_025333  cd PythonAPI/
+ 1885  20181126_025335  ls
+ 1886  20181126_025343  cd pycocotools/
+ 1887  20181126_025344  ls
+ 1888  20181126_025456  ls -ltr
+ 1889  20181126_025543  cd ../..
+ 1890  20181126_025546  cd ..
+ 1891  20181126_025551  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1892  20181126_025600  ls
+ 1893  20181126_025615  chcekjob 315463
+ 1894  20181126_025621  checkjob 315463
+ 1895  20181126_025623  cd ~
+ 1896  20181126_025626  ls -ltr
+ 1897  20181126_025638  cat Cascades_TensorFlow_Test.sh.e315463
+ 1898  20181126_025801  source activate tfenv123
+ 1899  20181126_025805  conda list
+ 1900  20181126_025816  pip install git+https://github.com/waleedka/cocoapi.git#egg=pycocotools&subdirectory=PythonAPI
+ 1901  20181126_025828  ashinmarin
+ 1902  20181126_025859  pip install git+https://github.com/waleedka/cocoapi.git#egg=pycocotools&subdirectory=PythonAPI
+ 1903  20181126_025903  ashinmarin
+ 1904  20181126_025936  pip install pycocotools
+ 1905  20181126_025954  cd Mask_RCNN-master/
+ 1906  20181126_025955  ls
+ 1907  20181126_030001  vi Cascades_TensorFlow_Test.sh 
+ 1908  20181126_030008  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1909  20181126_030136  checkjob 315464
+ 1910  20181126_030139  cd ~
+ 1911  20181126_030155  cat Cascades_TensorFlow_Test.sh.e315464
+ 1912  20181126_030236  cd Mask_RCNN-master/
+ 1913  20181126_030240  vi Cascades_TensorFlow_Test.sh 
+ 1914  20181126_030412  pwd
+ 1915  20181126_030418  vi Cascades_TensorFlow_Test.sh 
+ 1916  20181126_030505  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 1917  20181126_030511  cd ~
+ 1918  20181126_030513  ls -ltr
+ 1919  20181126_030606  checkjob 315465
+ 1920  20181126_030612  ls -ltr
+ 1921  20181126_030619  cat Cascades_TensorFlow_Test.sh.e315465
+ 1922  20181126_032054  checkjob 315465
+ 1923  20181126_032059  ls -ltr
+ 1924  20181126_113209  ls
+ 1925  20181126_113213  ls -ltr
+ 1926  20181126_113224  cat Cascades_TensorFlow_Test.sh.e315461
+ 1927  20181126_113307  ls
+ 1928  20181126_122521  ls -ltr
+ 1929  20181126_123039  CLASSPATH
+ 1930  20181126_124050  ls -ltr
+ 1931  20181126_130257  cd cnn-dailymail-master/
+ 1932  20181126_130257  ls
+ 1933  20181126_130300  cd cnn
+ 1934  20181126_130301  ls
+ 1935  20181126_130306  cd stories/
+ 1936  20181126_130307  ls
+ 1937  20181126_130326  cat 7f36bba222cd43f47483f9376244a69551ee0dce.story
+ 1938  20181126_130535  vi 7f36bba222cd43f47483f9376244a69551ee0dce.story
+ 1939  20181126_130736  ls
+ 1940  20181126_130744  cd ~
+ 1941  20181126_130746  cd cnn-dailymail-master/
+ 1942  20181126_130746  ls
+ 1943  20181126_130754  cd cnn-dailymail-master/
+ 1944  20181126_130756  ls
+ 1945  20181126_130808  vi Cascades_TensorFlow_Test.sh
+ 1946  20181126_130937  export CLASSPATH=/home/ashinmarin/stanford-corenlp-full-2018-10-05/stanford-corenlp-full-2018-10-05/stanford-corenlp-3.9.2.jar
+ 1947  20181126_131038  cd ..
+ 1948  20181126_131039  ls
+ 1949  20181126_131104  cat text_file.txt | java edu.stanford.nlp.process.PTBTokenizer -preserveLines
+ 1950  20181126_131141  module avail all
+ 1951  20181126_131152  cd cnn-dailymail-master/
+ 1952  20181126_131153  ls
+ 1953  20181126_131157  cat Cascades_TensorFlow_Test.sh
+ 1954  20181126_131220  cd ..
+ 1955  20181126_131222  ls
+ 1956  20181126_131234  export CLASSPATH=/home/ashinmarin/stanford-corenlp-full-2018-10-05/stanford-corenlp-full-2018-10-05/stanford-corenlp-3.9.2.jar
+ 1957  20181126_131242  module load jdk/1.8.0
+ 1958  20181126_131257  cat text_file.txt | java edu.stanford.nlp.process.PTBTokenizer -preserveLines
+ 1959  20181126_131327  vi text_file.txt 
+ 1960  20181126_131444  cat text_file.txt | java edu.stanford.nlp.process.PTBTokenizer -preserveLines
+ 1961  20181126_131916  cd ~
+ 1962  20181126_131918  cd pointer
+ 1963  20181126_131921  cd pointer-generator-master/
+ 1964  20181126_131922  ls
+ 1965  20181126_131929  vi trail_temp.sh 
+ 1966  20181126_132350  qsub -k oe trail_temp.sh 
+ 1967  20181126_132358  checkjob 315787
+ 1968  20181126_132502  cd ~
+ 1969  20181126_132505  ls -ltr
+ 1970  20181126_132520  cat trail_temp.sh.e315787
+ 1971  20181126_132554  module env list
+ 1972  20181126_132559  conda env list
+ 1973  20181126_132622  cd pointer-generator-master/
+ 1974  20181126_132625  vi Cascades_TensorFlow_Test.sh 
+ 1975  20181126_132640  vi trail_temp.sh 
+ 1976  20181126_132658  qsub -k oe trail_temp.sh 
+ 1977  20181126_132752  cat ~
+ 1978  20181126_132757  cd ~
+ 1979  20181126_132759  ls
+ 1980  20181126_132851  checkjob 315789
+ 1981  20181126_175128  ls -ltr
+ 1982  20181126_175143  cat trail_temp.sh.e315787
+ 1983  20181126_175223  ls -ltr
+ 1984  20181126_175231  cat Cascades_TensorFlow_Test.sh.o315461
+ 1985  20181126_175239  ls -ltr
+ 1986  20181126_175244  cd pointer-generator-master/
+ 1987  20181126_175245  ls
+ 1988  20181126_175256  cd Log_dir/
+ 1989  20181126_175257  ls
+ 1990  20181126_175259  cd myexperiment/
+ 1991  20181126_175300  ls
+ 1992  20181126_175303  cd decode/
+ 1993  20181126_175304  ls
+ 1994  20181126_175310  cat attn_vis_data.json 
+ 1995  20181126_175325  :q
+ 1996  20181126_175327  ls
+ 1997  20181126_175419  cd ~
+ 1998  20181126_175420  ls
+ 1999  20181126_175425  ls -ltr
+ 2000  20181126_175431  cat  Cascades_TensorFlow_Test.sh.e315461
+ 2001  20181126_223345  ls
+ 2002  20181126_223353  cd TextSummarization-master/
+ 2003  20181126_223359  ls
+ 2004  20181126_223402  cd TextSummarization-master/
+ 2005  20181126_223403  ls
+ 2006  20181126_223406  cd data
+ 2007  20181126_223414  cd dataset/
+ 2008  20181126_223418  ls
+ 2009  20181126_223431  python process_dataset.py
+ 2010  20181126_223509  ls
+ 2011  20181126_223514  cd fulltext/
+ 2012  20181126_223515  ls
+ 2013  20181126_223518  cd ..
+ 2014  20181126_223520  cd summary/
+ 2015  20181126_223521  ls
+ 2016  20181126_223831  cd ~
+ 2017  20181126_224048  cd pointer_generator_data-master/
+ 2018  20181126_224049  ls
+ 2019  20181126_224101  vi run.sh 
+ 2020  20181126_224149  cd dataset/
+ 2021  20181126_224151  pwd
+ 2022  20181126_224156  cd ..
+ 2023  20181126_224200  vi run.sh 
+ 2024  20181126_224224  qsub -k oe run.sh
+ 2025  20181126_224233  checkjob 316137
+ 2026  20181126_224420  cd ~
+ 2027  20181126_224422  ls -ltr
+ 2028  20181126_224431  cat run.sh.e316137
+ 2029  20181126_224452  checkjob 316137
+ 2030  20181126_224522  cd ~
+ 2031  20181126_224522  ls
+ 2032  20181126_224530  cat  run.sh.e316137
+ 2033  20181126_224612  cd pointer-generator-master/
+ 2034  20181126_224613  ls
+ 2035  20181126_224623  cd ..
+ 2036  20181126_224630  cd pointer_generator_data-master/
+ 2037  20181126_224631  ls
+ 2038  20181126_224636  vi run.sh 
+ 2039  20181126_224709  vi setup_stanford_corenlp.sh 
+ 2040  20181126_224725  vi run.sh 
+ 2041  20181126_225015  source activate tensorenv
+ 2042  20181126_225022  conda list
+ 2043  20181126_225040  pip install pytorch
+ 2044  20181126_225136  cd ~
+ 2045  20181126_225140  cd pointer_summarizer-master/
+ 2046  20181126_225141  ls
+ 2047  20181126_225144  cd training_ptr_gen/
+ 2048  20181126_225145  ls
+ 2049  20181126_225158  cd data
+ 2050  20181126_225200  cd data_util/
+ 2051  20181126_225201  ls
+ 2052  20181126_225204  cd ~
+ 2053  20181126_225331  ls -ltr
+ 2054  20181126_225341  cat run.sh.e316137
+ 2055  20181126_225434  conda install pytorch-cpu -c pytorch
+ 2056  20181126_225718  pip install torchvision
+ 2057  20181126_225725  conda list
+ 2058  20181126_225746  cd pointer
+ 2059  20181126_225759  cd pointer_generator_data-master/
+ 2060  20181126_225800  ls
+ 2061  20181126_225804  vi run.sh 
+ 2062  20181126_225856  qsub -k oe run.sh 
+ 2063  20181126_225905  checkjob 316190
+ 2064  20181126_230151  cd ~
+ 2065  20181126_230155  ls -ltr
+ 2066  20181126_230202  cat run.sh.e316190
+ 2067  20181126_230212  pip install nltk
+ 2068  20181126_230233  cd pointer_generator_data-master/
+ 2069  20181126_230238  qsub -k oe run.sh 
+ 2070  20181126_230959  checkjob 316192
+ 2071  20181126_231003  cd ~
+ 2072  20181126_231009  ls -ltr
+ 2073  20181126_231016  cat run.sh.e316192
+ 2074  20181126_231213  cd pointer_generator_data-master/
+ 2075  20181126_231219  qsub -k oe setup_stanford_corenlp.sh 
+ 2076  20181126_231244  vi setup_stanford_corenlp.sh 
+ 2077  20181126_231324  qsub -k oe setup_stanford_corenlp.sh 
+ 2078  20181126_231335  checkjob 316205
+ 2079  20181126_231413  cd ~
+ 2080  20181126_231417  ls -ltr
+ 2081  20181126_231426  cat setup_stanford_corenlp.sh.e316205 
+ 2082  20181126_231435  cd pointer_generator_data-master/
+ 2083  20181126_231446  qsub -k oe run.sh 
+ 2084  20181126_231605  checkjob 316207
+ 2085  20181126_231611  cd ~
+ 2086  20181126_231612  ls
+ 2087  20181126_231636  cat run.sh.e316207
+ 2088  20181126_231730  cd ~
+ 2089  20181126_231744  cd pointer_generator_data-master/
+ 2090  20181126_231746  ls
+ 2091  20181126_231750  vi setup_stanford_corenlp.sh 
+ 2092  20181126_231828  source ./setup_stanford_corenlp.sh
+ 2093  20181126_232009  echo CLASSPATH
+ 2094  20181126_232027  echo $CLASSPATH
+ 2095  20181126_232039  vi run.sh 
+ 2096  20181126_232229  cd dataset/
+ 2097  20181126_232231  ls
+ 2098  20181126_232236  cd ..
+ 2099  20181126_232243  qsub -k oe run.sh 
+ 2100  20181126_232327  checkjob 316250
+ 2101  20181126_232332  cd ~
+ 2102  20181126_232337  ls -ltr
+ 2103  20181126_232352  cat run.sh.e316250
+ 2104  20181126_232931  conda env list
+ 2105  20181126_232957  source deactivate tensorenv
+ 2106  20181126_233016  source activate tensorpy2env
+ 2107  20181126_233023  conda list
+ 2108  20181126_233039  pip install nltk
+ 2109  20181126_233106  conda install pytorch-cpu -c pytorch
+ 2110  20181126_233318  pip install torchvision
+ 2111  20181126_233328  cd pointer_generator_data-master/
+ 2112  20181126_233334  vi run.sh 
+ 2113  20181126_233439  qsub -k oe run.sh 
+ 2114  20181126_233656  checkjob 316253
+ 2115  20181126_233701  cd ~
+ 2116  20181126_233703  ls -ltr
+ 2117  20181126_233712  cat  run.sh.e316253
+ 2118  20181126_233742  cd pointer-generator-master/
+ 2119  20181126_233743  ls
+ 2120  20181126_233752  cat Cascades_TensorFlow_Test.sh
+ 2121  20181126_233759  which python
+ 2122  20181126_233805  cd ..
+ 2123  20181126_233810  cd pointer_generator_data-master/
+ 2124  20181126_233826  vi run.sh 
+ 2125  20181126_233859  qsub -k oe run.sh 
+ 2126  20181126_234019  checkjob 316254
+ 2127  20181126_234021  cd ~
+ 2128  20181126_234025  ls -ltr
+ 2129  20181126_234035  cat  run.sh.e316254
+ 2130  20181126_234140  cd pointer_generator_data-master/
+ 2131  20181126_234144  cd dataset/
+ 2132  20181126_234147  ls
+ 2133  20181126_234152  cd fulltext/
+ 2134  20181126_234153  ls
+ 2135  20181126_234212  cd ..
+ 2136  20181126_234217  ls
+ 2137  20181126_234221  cd summary
+ 2138  20181126_234224  ls
+ 2139  20181126_234302  cd ..
+ 2140  20181126_234309  vi run.sh 
+ 2141  20181126_234510  qsub -k oe run.sh 
+ 2142  20181126_234517  checkjob 316255
+ 2143  20181126_234615  cd ~
+ 2144  20181126_234631  ls -ltr
+ 2145  20181126_234640  cat run.sh.e316255
+ 2146  20181127_005743  cd ..
+ 2147  20181127_005745  git clone --recursive https://github.com/lichengunc/mask-faster-rcnn
+ 2148  20181127_005801  git clone https://github.com/cocodataset/cocoapi data/coco
+ 2149  20181127_010014  git config --global push.default simple
+ 2150  20181127_010031  git config --global user.email ashinmarin@vt.edu
+ 2151  20181127_010200  git config --global user.name ashinmarin
+ 2152  20181127_010218  git clone --no-checkout git@arcb.csc.ncsu.edu:testing.git
+ 2153  20181127_010231  git clone --recursive https://github.com/lichengunc/mask-faster-rcnn
+ 2154  20181127_111659  ls
+ 2155  20181127_111742  cat run.sh.e316255
+ 2156  20181127_111945  vi pointer-generator-master/
+ 2157  20181127_112027  cd pointer-generator-master/
+ 2158  20181127_112100  vi model.py
+ 2159  20181127_112103  ls
+ 2160  20181127_112109  cd ..
+ 2161  20181127_112110  ls
+ 2162  20181127_112613  cd cd pointer_generator_data-master/
+ 2163  20181127_112620  cd pointer_generator_data-master/
+ 2164  20181127_112622  ls
+ 2165  20181127_112631  vi make_datafiles.py 
+ 2166  20181127_115114  source activate tensorpy2env
+ 2167  20181127_115124  conda list
+ 2168  20181127_115213  cd ~
+ 2169  20181127_115323  find . -name argparse.py
+ 2170  20181127_120105  cd pointer_generator_data-master/
+ 2171  20181127_120113  vi run.sh 
+ 2172  20181127_120201  vi ./anaconda3/envs/tfenv123/lib/python3.4/argparse.py
+ 2173  20181127_120212  cd ./anaconda3/envs/tfenv123/lib/python3.4/
+ 2174  20181127_120218  cd ~
+ 2175  20181127_120224  cd ./anaconda3/envs/tfenv123/lib
+ 2176  20181127_120225  ls
+ 2177  20181127_120230  cd python3.4/
+ 2178  20181127_120237  vi argparse.py 
+ 2179  20181127_120537  cd ~
+ 2180  20181127_120540  cd pointer_generator_data-master/
+ 2181  20181127_120549  qsub -k oe run.sh 
+ 2182  20181127_120658  checkjob 316567
+ 2183  20181127_120700  cd ~
+ 2184  20181127_120701  ls
+ 2185  20181127_120711  cat run.sh.e316567
+ 2186  20181127_120722  conda env list
+ 2187  20181127_120759  source activate tesnorenv
+ 2188  20181127_120808  source activate tensorenv
+ 2189  20181127_120813  conda list
+ 2190  20181127_120824  which python
+ 2191  20181127_120846  cd ./.conda/envs/tensorenv/lib/python3.6/
+ 2192  20181127_120902  cd lib
+ 2193  20181127_120927  vi argparse.py 
+ 2194  20181127_121030  vi ./anaconda3/envs/tfenv123/lib/python3.4/argparse.py
+ 2195  20181127_121036  cd ~
+ 2196  20181127_121039  vi ./anaconda3/envs/tfenv123/lib/python3.4/argparse.py
+ 2197  20181127_121120  which pthon
+ 2198  20181127_121123  which oython
+ 2199  20181127_121127  which python
+ 2200  20181127_121138  cd pointer_generator_data-master/
+ 2201  20181127_121141  vi run.sh 
+ 2202  20181127_121207  qsub -k oe run.sh 
+ 2203  20181127_121313  checkjob 316603
+ 2204  20181127_121437  cd ~
+ 2205  20181127_121439  ls -ltr
+ 2206  20181127_121446  cat run.sh.e316603
+ 2207  20181127_121516  cd ./.conda/envs/tensorenv/lib/python3.6
+ 2208  20181127_121541  vi argparse.py
+ 2209  20181127_121555  cd ~
+ 2210  20181127_121558  cd pointer_generator_data-master/
+ 2211  20181127_121559  ls
+ 2212  20181127_121604  vi make_datafiles.py 
+ 2213  20181127_162133  cd pointer_generator_data-master/
+ 2214  20181127_162134  ls
+ 2215  20181127_162138  vi make_datafiles.py 
+ 2216  20181127_162216  qsub -k oe run.sh 
+ 2217  20181127_162238  checkjob 316916
+ 2218  20181127_162245  vi run.sh 
+ 2219  20181127_162255  checkjob 316916
+ 2220  20181127_162345  cd ~
+ 2221  20181127_162347  ls -ltr
+ 2222  20181127_162352  cat run.sh.e316916
+ 2223  20181127_162430  cd pointer_generator_data-master/
+ 2224  20181127_162432  vi make_datafiles.py 
+ 2225  20181127_162608  qsub -k oe run.sh 
+ 2226  20181127_162635  checkjob 316918
+ 2227  20181127_163014  cd ~
+ 2228  20181127_163016  ls -ltr
+ 2229  20181127_163022  cat run.sh.e316918
+ 2230  20181127_163045  cd pointer_generator_data-master/
+ 2231  20181127_163046  ls
+ 2232  20181127_163048  cd output/
+ 2233  20181127_163050  ls
+ 2234  20181127_163053  cd finished_files/
+ 2235  20181127_163054  ls
+ 2236  20181127_163126  cd chunked/
+ 2237  20181127_163127  ls
+ 2238  20181127_163150  source activate tensorenv
+ 2239  20181127_163206  conda list
+ 2240  20181127_163419  cd ~
+ 2241  20181127_163427  cat run.sh.o316918
+ 2242  20181127_163640  source deactivate tensorenv
+ 2243  20181127_163912  conda create -n pytorch python=3.4
+ 2244  20181127_164117  conda install pytorch torchvision -c pytorch
+ 2245  20181127_164330  cd pointer_
+ 2246  20181127_164333  cd pointer_generator_data-master/
+ 2247  20181127_164337  vi run.sh 
+ 2248  20181127_164433  source activate pytorch
+ 2249  20181127_164436  conda list
+ 2250  20181130_130506  ls
+ 2251  20181130_130510  cd mask-rcnn/
+ 2252  20181130_130510  ls
+ 2253  20181201_134015  cd mask-rcnn/
+ 2254  20181201_134016  ls
+ 2255  20181201_134651  mkdir coco
+ 2256  20181201_134653  ls
+ 2257  20181201_135416  cd ..
+ 2258  20181201_135417  ls
+ 2259  20181201_135419  cd Mask_RCNN-master/
+ 2260  20181201_135420  ls
+ 2261  20181201_135425  cd coco
+ 2262  20181201_135426  ls
+ 2263  20181201_135504  unzip train2014.zip 
+ 2264  20181201_141946  ls
+ 2265  20181201_141956  unzip test2014.zip 
+ 2266  20181201_143621  unzip val2014.zip 
+ 2267  20181201_144846  cd ..
+ 2268  20181201_144847  ls
+ 2269  20181201_144850  cd coco
+ 2270  20181201_144852  ls
+ 2271  20181201_144908  conda env list
+ 2272  20181201_144942  source activate test23
+ 2273  20181201_144945  conda list
+ 2274  20181201_144957  source deactivate test23
+ 2275  20181201_144959  ls
+ 2276  20181201_145011  source activate tensorenv
+ 2277  20181201_145012  ls
+ 2278  20181201_145018  conda list
+ 2279  20181201_145040  source deactivate tensorenv
+ 2280  20181201_145114  source activate tfenv123
+ 2281  20181201_145117  conda list
+ 2282  20181201_145210  cd ..
+ 2283  20181201_145211  ls
+ 2284  20181201_145216  vi Cascades_TensorFlow_Test.sh 
+ 2285  20181201_145343  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2286  20181201_145705  checkjob 319696
+ 2287  20181201_150111  cd ~
+ 2288  20181201_150117  ls -ltr
+ 2289  20181201_150511  qdel 319696
+ 2290  20181201_150518  ls -ltr
+ 2291  20181201_150531  checkjob 319696
+ 2292  20181201_150606  cd mask-rcnn/
+ 2293  20181201_150608  ls
+ 2294  20181201_150615  cd ..
+ 2295  20181201_150618  cd Mask_RCNN-master/
+ 2296  20181201_150620  ls
+ 2297  20181201_150632  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2298  20181201_150637  cd ~
+ 2299  20181201_150638  ls
+ 2300  20181201_150651  cd text-summarization-tensorflow-master/
+ 2301  20181201_150652  ls
+ 2302  20181201_150655  cd text-summarization-tensorflow-master/
+ 2303  20181201_150656  ls
+ 2304  20181201_151244  cd sum
+ 2305  20181201_151248  cd sumdata/
+ 2306  20181201_151249  ls
+ 2307  20181201_151304  cd ~
+ 2308  20181201_151304  ls
+ 2309  20181201_151319  vi Cascades_TensorFlow_Test.sh 
+ 2310  20181201_151357  checkjob 319702
+ 2311  20181201_153026  c d~
+ 2312  20181201_153029  cd ~
+ 2313  20181201_153031  ls -ltr
+ 2314  20181201_153042  cat Cascades_TensorFlow_Test.sh.e319702
+ 2315  20181201_153257  cd Mask_RCNN-master/
+ 2316  20181201_153258  ls
+ 2317  20181201_153301  cd coco
+ 2318  20181201_153302  ls
+ 2319  20181201_153306  cd ..
+ 2320  20181201_153309  cd samples/
+ 2321  20181201_153314  ls
+ 2322  20181201_153317  cd coco
+ 2323  20181201_153318  ls
+ 2324  20181201_153323  cd ..
+ 2325  20181201_153327  ls
+ 2326  20181201_153348  pwd
+ 2327  20181201_153505  cd samples/
+ 2328  20181201_153508  cd coco/
+ 2329  20181201_153509  ls
+ 2330  20181201_153513  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2331  20181201_153823  vi Cascades_TensorFlow_Test.sh 
+ 2332  20181201_153839  checkjob 319711
+ 2333  20181201_153847  vi Cascades_TensorFlow_Test.sh 
+ 2334  20181201_153902  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2335  20181201_154144  checkjob 319712
+ 2336  20181201_154150  cd ~
+ 2337  20181201_154151  ls -ltr
+ 2338  20181201_154157  cat Cascades_TensorFlow_Test.sh.e319712
+ 2339  20181201_154315  cd Mask_RCNN-master/
+ 2340  20181201_154316  ls
+ 2341  20181201_154320  cd coco
+ 2342  20181201_154328  ls
+ 2343  20181201_154335  cd val2014
+ 2344  20181201_154336  ls
+ 2345  20181201_154438  cd ~
+ 2346  20181201_155557  cd Mask_RCNN-master/
+ 2347  20181201_155558  ls
+ 2348  20181201_155603  cd coco
+ 2349  20181201_155604  ls
+ 2350  20181201_155607  cd ..
+ 2351  20181201_155608  ls
+ 2352  20181201_155612  cd samples/
+ 2353  20181201_155614  cd coco/
+ 2354  20181201_155615  ls
+ 2355  20181201_155619  cat Cascades_TensorFlow_Test.sh 
+ 2356  20181201_161427  ls
+ 2357  20181201_161430  cd ..
+ 2358  20181201_161431  ls
+ 2359  20181201_161433  cd ..
+ 2360  20181201_161435  ls
+ 2361  20181201_161440  cd coco
+ 2362  20181201_161441  ls
+ 2363  20181201_161447  unzip annotations_trainval2014.zip 
+ 2364  20181201_161510  cd samples
+ 2365  20181201_161512  cd ..
+ 2366  20181201_161514  cd samples/
+ 2367  20181201_161515  ls
+ 2368  20181201_161518  cd coco/
+ 2369  20181201_161518  ls
+ 2370  20181201_161527  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2371  20181201_161702  checkjob 319717.
+ 2372  20181201_161705  checkjob 319717
+ 2373  20181201_163035  cd ~
+ 2374  20181201_163037  ls -ltr
+ 2375  20181201_163045  cat Cascades_TensorFlow_Test.sh.e319717
+ 2376  20181201_163638  cd Mask_RCNN-master/
+ 2377  20181201_163643  cd samples/
+ 2378  20181201_163644  ls 
+ 2379  20181201_163651  cd coco/
+ 2380  20181201_163651  ls
+ 2381  20181201_163656  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2382  20181201_164553  ls -ltr
+ 2383  20181201_164609  cat Cascades_TensorFlow_Test.sh.e319722
+ 2384  20181201_165546  cd Mask_RCNN-master/
+ 2385  20181201_165546  ls
+ 2386  20181201_165549  cd samples/
+ 2387  20181201_165551  cd coco/
+ 2388  20181201_165552  ;ls
+ 2389  20181201_165553  ls
+ 2390  20181201_165559  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2391  20181201_170058  checkjob 319778
+ 2392  20181201_170105  cd ~
+ 2393  20181201_170108  ls -ltr
+ 2394  20181201_170115  cat  Cascades_TensorFlow_Test.sh.e319778
+ 2395  20181201_170232  cd Mask_RCNN-master/
+ 2396  20181201_170233  ls
+ 2397  20181201_170249  cd mrcnn
+ 2398  20181201_170250  ls
+ 2399  20181201_170255  vi model.py 
+ 2400  20181201_170649  source activate tfenv123
+ 2401  20181201_170653  conda list
+ 2402  20181201_170823  pip install --upgrade tensorflow==1.8
+ 2403  20181201_171656  conda list
+ 2404  20181201_171717  cd ~
+ 2405  20181201_171720  cd Mask_RCNN-master/
+ 2406  20181201_171720  ls
+ 2407  20181201_171735  cd coco
+ 2408  20181201_171736  ls
+ 2409  20181201_171739  cd ..
+ 2410  20181201_171741  cd samples/
+ 2411  20181201_171744  cd coco/
+ 2412  20181201_171744  ls
+ 2413  20181201_171749  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2414  20181201_171848  checkjob 319780.
+ 2415  20181201_171855  checkjob 319780
+ 2416  20181201_182358  cd ~
+ 2417  20181201_182401  ls -ltr
+ 2418  20181201_182414  cat  Cascades_TensorFlow_Test.sh.o319780
+ 2419  20181201_182425  :
+ 2420  20181201_183400  checkjob 319780
+ 2421  20181201_224915  cd Mask_RCNN-master/
+ 2422  20181201_224916  ls
+ 2423  20181201_224926  cd coco
+ 2424  20181201_224927  ls
+ 2425  20181202_004255  ls -ltr
+ 2426  20181202_004311  checkjob 319780
+ 2427  20181202_033519  ls -ltr
+ 2428  20181202_033531  checkjob Cascades_TensorFlow_Test.sh.o319780
+ 2429  20181202_033540  cat Cascades_TensorFlow_Test.sh.o319780
+ 2430  20181202_033600  ls -ltr
+ 2431  20181202_033607  cat Cascades_TensorFlow_Test.sh.e319780
+ 2432  20181202_123543  ls -ltr
+ 2433  20181202_123602  cat Cascades_TensorFlow_Test.sh.e319780
+ 2434  20181202_123617  ls -ltr
+ 2435  20181202_123715  checkjob 319780
+ 2436  20181202_180543  ls
+ 2437  20181202_180548  ls -ltr
+ 2438  20181202_180558  checkjob 319780
+ 2439  20181202_180604  ls -ltr
+ 2440  20181202_180613  cat Cascades_TensorFlow_Test.sh.o319780
+ 2441  20181202_180755  cd Mask_RCNN-master/
+ 2442  20181202_180755  ls
+ 2443  20181202_180759  cd samples/
+ 2444  20181202_180801  cd coco/
+ 2445  20181202_180802  ls
+ 2446  20181202_180903  cp joe_expenses cashflow
+ 2447  20181202_180925  cp Cascades_TensorFlow_Test.sh run_trail_temp.sh
+ 2448  20181202_180926  ls
+ 2449  20181202_180930  vi run_trail_temp.sh 
+ 2450  20181202_181006  qsub -k oe run_trail_temp.sh 
+ 2451  20181202_181018  vi run_trail_temp.sh 
+ 2452  20181202_181029  qsub -k oe run_trail_temp.sh 
+ 2453  20181202_181044  qdel 320391
+ 2454  20181202_181047  vi run_trail_temp.sh 
+ 2455  20181202_181059  qsub -k oe run_trail_temp.sh 
+ 2456  20181202_181105  vi run_trail_temp.sh 
+ 2457  20181202_181116  qsub -k oe run_trail_temp.sh 
+ 2458  20181202_181123  cd ~
+ 2459  20181202_181125  ls -ltr
+ 2460  20181202_181359  checkjob 320395
+ 2461  20181202_183444  ls -ltr
+ 2462  20181202_191424  checkjob 319780
+ 2463  20181202_191427  ls -ltr
+ 2464  20181202_191434  cat Cascades_TensorFlow_Test.sh.o319780
+ 2465  20181202_192754  ls -ltr
+ 2466  20181203_012211  cat Cascades_TensorFlow_Test.sh.o319780
+ 2467  20181203_030601  ls -ltr
+ 2468  20181203_030607  cat  Cascades_TensorFlow_Test.sh.o319780
+ 2469  20181203_030835  ls
+ 2470  20181203_030837  ls -ltr
+ 2471  20181203_030843  cd pythonrouge-master/
+ 2472  20181203_030906  cd ~
+ 2473  20181203_030907  ls
+ 2474  20181203_031011  conda env list
+ 2475  20181203_031035  source activate test23
+ 2476  20181203_031039  conda list
+ 2477  20181203_031102  source deactivate test 23
+ 2478  20181203_031112  source activate pytorch_env
+ 2479  20181203_031116  conda list
+ 2480  20181203_031254  cd pythonrouge-master/
+ 2481  20181203_031255  ls
+ 2482  20181203_031306  python setup.py install
+ 2483  20181203_031327  conda list
+ 2484  20181203_031403  which python
+ 2485  20181203_031449  ls
+ 2486  20181203_031501  vi pyrouge_eval.sh 
+ 2487  20181203_031603  qsub -k oe pyrouge_eval.sh 
+ 2488  20181203_031612  checkjob 320613
+ 2489  20181203_032833  cd ~
+ 2490  20181203_032835  ls -ltr
+ 2491  20181203_032849  checkjob 320613
+ 2492  20181203_104252  ls -ltr
+ 2493  20181203_104311  cat run_trail_temp.sh.e320395
+ 2494  20181203_104413  checkjob 320613
+ 2495  20181203_120915  ls
+ 2496  20181203_120921  checkjob 320613
+ 2497  20181203_120938  ls -ltr
+ 2498  20181203_120947  cat pyrouge_eval.sh.o320613
+ 2499  20181203_120955  cat pyrouge_eval.sh.e320613
+ 2500  20181203_121007  cd pyrouge_eval.sh.
+ 2501  20181203_121014  cd pythonrouge-master/
+ 2502  20181203_121017  ls
+ 2503  20181203_121148  cd sample/
+ 2504  20181203_121151  ls
+ 2505  20181203_121915  cd summary/
+ 2506  20181203_121916  ls
+ 2507  20181203_121935  vi summaryA.txt 
+ 2508  20181203_121940  cd ..
+ 2509  20181203_121942  cd..
+ 2510  20181203_121943  ls
+ 2511  20181203_121945  cd reference/summary
+ 2512  20181203_121948  cd reference/
+ 2513  20181203_121949  ls
+ 2514  20181203_122212  conda env list
+ 2515  20181203_122227  source activate pytorch_env
+ 2516  20181203_122238  cd ..
+ 2517  20181203_122241  ls
+ 2518  20181203_122250  vi pyrouge_eval.sh 
+ 2519  20181203_122305  which python
+ 2520  20181203_122313  conda list
+ 2521  20181203_123238  source deactivate pytorch_env
+ 2522  20181203_123249  source deactivate 
+ 2523  20181203_123257  cd
+ 2524  20181203_123319  source deactivate pytorch_env
+ 2525  20181203_123341  quit() ls
+ 2526  20181203_123659  python
+ 2527  20181203_123709  cd pyrouge_eval.sh.
+ 2528  20181203_123716  ls
+ 2529  20181203_123720  cd pythonrouge-master/
+ 2530  20181203_123720  ls
+ 2531  20181203_123740  python setup.py install
+ 2532  20181203_123803  python example.py 
+ 2533  20181203_123949  ls -ltr
+ 2534  20181203_124023  conda create -n test_eval python=3.6
+ 2535  20181203_124325  source activate test_eval
+ 2536  20181203_124328  conda list
+ 2537  20181203_124357  ls
+ 2538  20181203_124405  pip install git+https://github.com/tagucci/pythonrouge.git
+ 2539  20181203_124414  conda list
+ 2540  20181203_124424  ls
+ 2541  20181203_124431  vi pyrouge_eval.sh 
+ 2542  20181203_124438  which python
+ 2543  20181203_124447  vi pyrouge_eval.sh 
+ 2544  20181203_124520  qsub -k oe pyrouge_eval.sh 
+ 2545  20181203_124530  checkjob 320889
+ 2546  20181203_142146  ls -ltr
+ 2547  20181203_142155  checkjob 319780
+ 2548  20181203_142217  cat Cascades_TensorFlow_Test.sh.o319780
+ 2549  20181203_142240  ls -ltr
+ 2550  20181203_142259  qdel 319780
+ 2551  20181203_142309  checkjob 320889
+ 2552  20181203_171418  ls
+ 2553  20181203_171425  ls -ltr
+ 2554  20181203_171438  cat  pyrouge_eval.sh.o320889
+ 2555  20181203_171446  cat pyrouge_eval.sh.e320889
+ 2556  20181203_171500  cat Cascades_TensorFlow_Test.sh.o319780
+ 2557  20181203_171609  cd Mask_RCNN-master/
+ 2558  20181203_171610  ls
+ 2559  20181203_171626  cd coco
+ 2560  20181203_171634  cd ..
+ 2561  20181203_171636  cd samples/
+ 2562  20181203_171638  cd coco
+ 2563  20181203_171639  ls
+ 2564  20181203_171642  vi Cascades_TensorFlow_Test.sh 
+ 2565  20181203_171720  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2566  20181203_171729  checkjob 321117
+ 2567  20181203_172235  ls -ltr
+ 2568  20181203_172243  cat Cascades_TensorFlow_Test.sh.e321117
+ 2569  20181203_172305  cat  Cascades_TensorFlow_Test.sh.o321117
+ 2570  20181203_172306  ls
+ 2571  20181203_172310  cd Mask_RCNN-master/
+ 2572  20181203_172310  ls
+ 2573  20181203_172533  cd images
+ 2574  20181203_172534  ls
+ 2575  20181204_024112  ls -ltr
+ 2576  20181204_024124  cat Cascades_TensorFlow_Test.sh.e321347
+ 2577  20181204_024134  cat Cascades_TensorFlow_Test.sh.o321347
+ 2578  20181204_024201  cd Mask_RCNN-master/
+ 2579  20181204_024201  ls
+ 2580  20181204_024206  cd logs/
+ 2581  20181204_024207  ls
+ 2582  20181204_024212  cd coco2018120
+ 2583  20181204_024225  cd coco20181201T17171
+ 2584  20181204_024229  cd coco20181201T1717
+ 2585  20181204_024231  ls
+ 2586  20181204_024301  cd ~
+ 2587  20181204_024305  cd Mask_RCNN-master/
+ 2588  20181204_024306  ls
+ 2589  20181204_024308  cd coco
+ 2590  20181204_024309  ls
+ 2591  20181204_024533  cd ..
+ 2592  20181204_024534  ls
+ 2593  20181204_024542  ls -ltr
+ 2594  20181204_024637  checkjob 321117
+ 2595  20181204_024705  checkjob 321347
+ 2596  20181204_025816  cd logs
+ 2597  20181204_025817  ls
+ 2598  20181204_025827  cd coco2018120T1655
+ 2599  20181204_025835  cd coco20181201T1655
+ 2600  20181204_025837  ls
+ 2601  20181204_025839  ls 
+ 2602  20181204_025842  d ..
+ 2603  20181204_025844  cd ..
+ 2604  20181204_025853  cd coco20181201T1717
+ 2605  20181204_025855  ls
+ 2606  20181204_025908  cat  mask_rcnn_coco_0002.h5
+ 2607  20181204_013233  ls -ltr
+ 2608  20181204_013248  cat  run_trail_temp.sh.o320395
+ 2609  20181204_013258  ls -ltr
+ 2610  20181204_013309  cat Cascades_TensorFlow_Test.sh.e321117
+ 2611  20181204_013520  cd /home/ashinmarin/anaconda3/envs/tfenv123/lib/python3.4/site-packages/pycocotools
+ 2612  20181204_013522  ls 
+ 2613  20181204_013531  vi coco.py 
+ 2614  20181204_014041  cd ~
+ 2615  20181204_014048  cd Mask_RCNN-master/
+ 2616  20181204_014050  ls
+ 2617  20181204_014103  cd samples/
+ 2618  20181204_014106  ls
+ 2619  20181204_014112  cd coco/
+ 2620  20181204_014114  ls
+ 2621  20181204_014145  qsub -k oe Cascades_TensorFlow_Test.sh
+ 2622  20181204_014551  checkjob 321345
+ 2623  20181204_021023  ls -ltr
+ 2624  20181204_021027  cd ~
+ 2625  20181204_021028  ls -ltr
+ 2626  20181204_021035  cat  Cascades_TensorFlow_Test.sh.e321345
+ 2627  20181204_021229  qsub -k oe Cascades_TensorFlow_Test.sh
+ 2628  20181204_021242  qdel 321346
+ 2629  20181204_021248  cd Mask_RCNN-master/
+ 2630  20181204_021252  cd samples/
+ 2631  20181204_021255  cd coco
+ 2632  20181204_021256  ls
+ 2633  20181204_021301  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2634  20181204_182136  ls -ltr
+ 2635  20181204_182146  cat run_trail_temp.sh.o320395
+ 2636  20181205_230202  ls
+ 2637  20181205_230206  ls -ltr
+ 2638  20181205_230238  cd pointer-generator-master/
+ 2639  20181205_230239  ls
+ 2640  20181206_143233  ls -ltr
+ 2641  20181206_143245  cat  run_trail_temp.sh.o320395
+ 2642  20181206_212458  ls -ltr
+ 2643  20181206_212516  cat Cascades_TensorFlow_Test.sh.o321347
+ 2644  20181206_212530  ls -ltr
+ 2645  20181206_212537  cat Cascades_TensorFlow_Test.sh.e321347
+ 2646  20181206_212643  cd Mask_RCNN-master/
+ 2647  20181206_212644  ls 
+ 2648  20181206_212647  ls -ltr
+ 2649  20181206_212654  cd logs
+ 2650  20181206_212655  ls
+ 2651  20181206_213008  cd ..
+ 2652  20181206_213010  ls
+ 2653  20181206_213016  cd samples/
+ 2654  20181206_213016  ls
+ 2655  20181206_213019  cd coco/
+ 2656  20181206_213019  ls
+ 2657  20181206_214527  cd ..
+ 2658  20181206_214528  ls
+ 2659  20181206_214531  cd ..
+ 2660  20181206_214532  ls
+ 2661  20181206_214536  cd assets/
+ 2662  20181206_214537  ls
+ 2663  20181206_221323  cd ..
+ 2664  20181206_221324  ls
+ 2665  20181206_222255  cd pycocotools/
+ 2666  20181206_222257  ls
+ 2667  20181207_004432  cd ~
+ 2668  20181207_004434  ls
+ 2669  20181207_004529  cd Custom_Mask_RCNN/
+ 2670  20181207_004531  ls
+ 2671  20181207_004540  cd ..
+ 2672  20181207_004549  cd Mask_RCNN-master/
+ 2673  20181207_004552  ls
+ 2674  20181207_004555  cd samples/
+ 2675  20181207_004558  cd coco/
+ 2676  20181207_004600  ls
+ 2677  20181207_004605  vi C
+ 2678  20181207_004710  cd ~
+ 2679  20181207_004712  ls
+ 2680  20181207_004721  cd Custom_Mask_RCNN/
+ 2681  20181207_004723  ls
+ 2682  20181207_004726  vi Cascades_TensorFlow_Test.sh 
+ 2683  20181207_005102  cd images/
+ 2684  20181207_005106  pwd
+ 2685  20181207_005135  cd ..
+ 2686  20181207_005147  mkdir output
+ 2687  20181207_005149  ls
+ 2688  20181207_005224  vi Cascades_TensorFlow_Test.sh 
+ 2689  20181207_005404  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2690  20181207_005426  checkjob 323088
+ 2691  20181207_005537  cd ~
+ 2692  20181207_005540  ls -ltr
+ 2693  20181207_005549  cat Cascades_TensorFlow_Test.sh.e323088
+ 2694  20181207_005644  cd Custom_Mask_RCNN/
+ 2695  20181207_005653  vi Cascades_TensorFlow_Test.sh 
+ 2696  20181207_005708  source activate tfenv123
+ 2697  20181207_005731  pip install lxml
+ 2698  20181207_005759  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2699  20181207_005811  checkjob 323089
+ 2700  20181207_005918  cd ~
+ 2701  20181207_005921  ls -ltr
+ 2702  20181207_005929  cat Cascades_TensorFlow_Test.sh.e323089
+ 2703  20181207_010620  echo $PYTHON_HOME
+ 2704  20181207_010800  cd Custom_Mask_RCNN/
+ 2705  20181207_010804  vi Cascades_TensorFlow_Test.sh 
+ 2706  20181207_010820  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2707  20181207_010845  export PYTHONPATH=$PYTHONPATH:pwd:pwd/slim
+ 2708  20181207_010852  echo PYTHONPATH
+ 2709  20181207_010910  checkjob 323090
+ 2710  20181207_010917  cd ~
+ 2711  20181207_010919  ls -ltr
+ 2712  20181207_010926  cat Cascades_TensorFlow_Test.sh.e323090
+ 2713  20181207_010936  cd Custom_Mask_RCNN/
+ 2714  20181207_010940  vi Cascades_TensorFlow_Test.sh 
+ 2715  20181207_011053  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2716  20181207_011909  checkjob 323091
+ 2717  20181207_011916  cd ~
+ 2718  20181207_011919  ls -ltr
+ 2719  20181207_011927  cat Cascades_TensorFlow_Test.sh.e323091
+ 2720  20181207_011933  cd Custom_Mask_RCNN/
+ 2721  20181207_011934  ls
+ 2722  20181207_014334  unzip models-master.zip 
+ 2723  20181207_014422  ls
+ 2724  20181207_014428  cd models-master
+ 2725  20181207_014432  ls
+ 2726  20181207_014447  cd research/
+ 2727  20181207_014501  SET PYTHONPATH=%cd%:%cd%\slim
+ 2728  20181207_014604  ls
+ 2729  20181207_014736  pwd
+ 2730  20181207_014748  cd ..
+ 2731  20181207_014754  vi Cascades_TensorFlow_Test.sh 
+ 2732  20181207_015042  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2733  20181207_015156  checkjob 323092
+ 2734  20181207_015205  ls -ltr
+ 2735  20181207_015210  cd ~
+ 2736  20181207_015213  ls -ltr
+ 2737  20181207_015221  cat Cascades_TensorFlow_Test.sh.e323092
+ 2738  20181207_020001  cd Custom_Mask_RCNN/
+ 2739  20181207_020002  ls
+ 2740  20181207_020009  cd models-master
+ 2741  20181207_020010  ls
+ 2742  20181207_020051  cp research/object_detection  Custom_Mask_RCNN/object_detection
+ 2743  20181207_020100  ls
+ 2744  20181207_020103  cd ..
+ 2745  20181207_020104  ls
+ 2746  20181207_020122  vi Cascades_TensorFlow_Test.sh 
+ 2747  20181207_020138  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2748  20181207_020259  checkjob 323093
+ 2749  20181207_020304  cd ~
+ 2750  20181207_020308  ls -ltr
+ 2751  20181207_020315  cat Cascades_TensorFlow_Test.sh.e323093
+ 2752  20181207_020544  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2753  20181207_020709  checkjob 323094
+ 2754  20181207_021928  cd Custom_Mask_RCNN/
+ 2755  20181207_021934  vi Cascades_TensorFlow_Test.sh 
+ 2756  20181207_021954  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2757  20181207_022018  checkjob 323095
+ 2758  20181207_022044  cd ~
+ 2759  20181207_022049  ls -ltr
+ 2760  20181207_022054  cat Cascades_TensorFlow_Test.sh.e323095
+ 2761  20181207_022229  cd Custom_Mask_RCNN/
+ 2762  20181207_022230  ls
+ 2763  20181207_022236  cd object_detection/
+ 2764  20181207_022237  ls
+ 2765  20181207_022254  cd slim
+ 2766  20181207_022255  ls
+ 2767  20181207_022322  cd utils
+ 2768  20181207_022323  ls
+ 2769  20181207_022416  cd ..
+ 2770  20181207_022425  ls
+ 2771  20181207_022436  unzip models-master.zip 
+ 2772  20181207_022545  vi Cas
+ 2773  20181207_022554  vi Cascades_TensorFlow_Test.sh 
+ 2774  20181207_022648  ls
+ 2775  20181207_022654  rm object_detection/
+ 2776  20181207_022715  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2777  20181207_022859  checkjob 323096
+ 2778  20181207_022914  cd ~
+ 2779  20181207_022918  ls -ltr
+ 2780  20181207_022924  cat Cascades_TensorFlow_Test.sh.e323096
+ 2781  20181207_023211  cd Custom_Mask_RCNN/
+ 2782  20181207_023219  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2783  20181207_023333  checkjob 323097
+ 2784  20181207_023335  cd ~
+ 2785  20181207_023338  ls -ltr
+ 2786  20181207_023343  cat Cascades_TensorFlow_Test.sh.e323097
+ 2787  20181207_023358  cd Custom_Mask_RCNN/
+ 2788  20181207_023358  ls
+ 2789  20181207_023402  vi Cascades_TensorFlow_Test.sh 
+ 2790  20181207_023521  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2791  20181207_023621  checkjob 323098
+ 2792  20181207_023627  cd ~
+ 2793  20181207_023629  ls -ltr
+ 2794  20181207_023635  cat 
+ 2795  20181207_023801  ls -ltr
+ 2796  20181207_023806  cd Custom_Mask_RCNN/
+ 2797  20181207_023806  ls
+ 2798  20181207_023831  cd models-master
+ 2799  20181207_023833  ls
+ 2800  20181207_023837  cd research/
+ 2801  20181207_023840  %cd
+ 2802  20181207_023859  ls
+ 2803  20181207_023911  cd ~
+ 2804  20181207_023913  ls -ltr
+ 2805  20181207_023918  cat Cascades_TensorFlow_Test.sh.e323097
+ 2806  20181207_023926  cat Cascades_TensorFlow_Test.sh.e323096
+ 2807  20181207_024110  source activate tfenv123
+ 2808  20181207_024113  conda list
+ 2809  20181207_024722  cd Custom_Mask_RCNN/
+ 2810  20181207_024730  unzip models-master.zip 
+ 2811  20181207_024812  ls
+ 2812  20181207_024818  cd models-master
+ 2813  20181207_024819  ls
+ 2814  20181207_025650  cd ..
+ 2815  20181207_025656  cd ls
+ 2816  20181207_025702  ls
+ 2817  20181207_025717  cd object_detection/
+ 2818  20181207_025918  cd ..
+ 2819  20181207_025921  protoc object_detection/protos/*.proto --python_out=
+ 2820  20181207_025940  source deactivate tfenv123
+ 2821  20181207_025942  protoc object_detection/protos/*.proto --python_out=
+ 2822  20181207_030227  vi Cas
+ 2823  20181207_030233  vi Cascades_TensorFlow_Test.sh 
+ 2824  20181207_030340  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2825  20181207_030348  checkjob 323099
+ 2826  20181207_030420  cd ~
+ 2827  20181207_030421  ls -ltr
+ 2828  20181207_030427  cat Cascades_TensorFlow_Test.sh.e323099
+ 2829  20181207_030948  cd Custom_Mask_RCNN/
+ 2830  20181207_030956  qsub -k oe Cascades_TensorFlow_Test.sh 
+ 2831  20181207_031041  checkjob 323100
+ 2832  20181207_031048  ls -ltr
+ 2833  20181207_031053  cd ~
+ 2834  20181207_031054  ls
+ 2835  20181207_031056  ls -ltr
+ 2836  20181207_031101  cat Cascades_TensorFlow_Test.sh.e323100
+ 2837  20181207_031325  source activate tfenv123
+ 2838  20181207_031337  pip install protoc
+ 2839  20181207_031450  cd Custom_Mask_RCNN/
+ 2840  20181207_031454  cd models-master
+ 2841  20181207_031457  cd research/
+ 2842  20181207_031458  ls
+ 2843  20181207_031520  protoc object_detection/protos/*.proto --python_out=
+ 2844  20190126_111008  ls
+ 2845  20190413_165448  docker --version
+ 2846  20190413_165510  nvidia-docker version
+ 2847  20190517_150804  quit()
+ 2848  20190927_110640  ls
+ 2849  20190927_110814  mkdir MultiNews_Summarization
+ 2850  20190927_110816  ls
+ 2851  20190927_110830  cd MultiNews_Summarization/
+ 2852  20190927_110831  ls
+ 2853  20190927_110835  cd ..
+ 2854  20190927_110852  cd MultiNews_Summarization/
+ 2855  20190927_110907  git 
+ 2856  20190927_110916  git clone https://github.com/Alex-Fabbri/Multi-News
+ 2857  20190927_110926  ls
+ 2858  20190927_110930  cd Multi-News/
+ 2859  20190927_110931  ls
+ 2860  20190927_110955  cd ..
+ 2861  20190927_111450  cd MultiNews_Summarization/Multi-News/
+ 2862  20190927_111451  ls
+ 2863  20190927_111458  cd code/
+ 2864  20190927_111501  cd data
+ 2865  20190927_111504  cd ..
+ 2866  20190927_111510  cd Code
+ 2867  20190927_111513  cd code/
+ 2868  20190927_111514  ls
+ 2869  20190927_111518  cd OpenNMT-py-baselines/
+ 2870  20190927_111519  l
+ 2871  20190927_111520  ls
+ 2872  20190927_111618  cd ~
+ 2873  20190927_111707  conda create -n multi_news python=3.6.2
+ 2874  20190927_111900  source activate multi_news
+ 2875  20190927_111945  pip install six==1.12.0
+ 2876  20190927_112003  pip install chardet==3.0.4
+ 2877  20190927_112031  pip install future==0.17.1
+ 2878  20190927_112150  pip install idna==2.8
+ 2879  20190927_112212  pip install numpy==1.16.1
+ 2880  20190927_112252  pip install opencv-python==4.0.0.21
+ 2881  20190927_112309  pip install requests=2.21.0
+ 2882  20190927_112317  pip install requests==2.21.0
+ 2883  20190927_112350  pip install six==1.12.0
+ 2884  20190927_112403  pip install torch==0.4.1
+ 2885  20190927_112458  pip install tqdm==4.31.1
+ 2886  20190927_112725  pip install urllib3==1.24.1
+ 2887  20190927_112808  pip git+https://github.com/pytorch/text
+ 2888  20190927_110205  ls
+ 2889  20191001_141104  conda activate multi_news
+ 2890  20191001_141120  ls
+ 2891  20191001_141128  ls -al
+ 2892  20191001_141200  cd MultiNews_Summarization/
+ 2893  20191001_141201  s
+ 2894  20191001_141202  ls
+ 2895  20191001_141205  cd Multi-News/
+ 2896  20191001_141206  ls
+ 2897  20191001_141214  conda activate multi_news
+ 2898  20191001_141223  cd code/
+ 2899  20191001_141224  conda activate multi_news
+ 2900  20191001_141227  ls
+ 2901  20191001_141256  cd Hi_MAP/
+ 2902  20191001_141257  ls
+ 2903  20191001_141342  cd ~
+ 2904  20191001_141403  conda activate multi_news
+ 2905  20191001_141434  conda list
+ 2906  20191001_141509  conda activate multi_news
+ 2907  20191001_141539  source activate multi_news
+ 2908  20191001_141548  ls
+ 2909  20191001_141551  cd MultiNews_Summarization/
+ 2910  20191001_141552  ls
+ 2911  20191001_141555  cd Multi-News/
+ 2912  20191001_141555  ls
+ 2913  20191001_141559  cd code/
+ 2914  20191001_141600  ls
+ 2915  20191001_141602  cd Hi_MAP/
+ 2916  20191001_141603  ls
+ 2917  20191001_141838  cd ~
+ 2918  20191001_141839  ls
+ 2919  20191001_141902  vim Cascades_TensorFlow_Test.sh
+ 2920  20191001_142125  cd MultiNews_Summarization/
+ 2921  20191001_142128  cd Multi-News/
+ 2922  20191001_142129  ls
+ 2923  20191001_142132  cd code/
+ 2924  20191001_142132  ls
+ 2925  20191001_142135  cd Hi_MAP/
+ 2926  20191001_142135  ls
+ 2927  20191001_142259  cd ~
+ 2928  20191001_142526  rm Cascades_TensorFlow_Test.sh.o*
+ 2929  20191001_142527  ls
+ 2930  20191001_142534  rm Cascades_TensorFlow_Test.sh.e*
+ 2931  20191001_142535  ls
+ 2932  20191001_142549  rm run.sh.e*
+ 2933  20191001_142553  rm run.sh.o*
+ 2934  20191001_142555  ls
+ 2935  20191001_142620  rm pyrouge_eval.sh.e*
+ 2936  20191001_142624  rm pyrouge_eval.sh.o*
+ 2937  20191001_142641  rm run_trail_temp.sh.sh.e*
+ 2938  20191001_142645  ls
+ 2939  20191001_142702  cd MultiNews_Summarization/Multi-News/
+ 2940  20191001_142703  ls
+ 2941  20191001_142706  cd code/
+ 2942  20191001_142707  ls
+ 2943  20191001_142711  cd Hi_MAP/
+ 2944  20191001_142721  ls
+ 2945  20191001_142757  sbatch run_prep_newser.sh 
+ 2946  20191001_142825  vim run_prep_newser.sh 
+ 2947  20191001_142940  cd ..
+ 2948  20191001_142943  ls
+ 2949  20191001_142946  cd data/
+ 2950  20191001_142947  ls
+ 2951  20191001_143035  cd 
+ 2952  20191001_143040  cd data
+ 2953  20191001_143041  ls
+ 2954  20191001_143157  cd MultiNews_Summarization/Multi-News/data/
+ 2955  20191001_143157  ls
+ 2956  20191001_143211  cd ids/
+ 2957  20191001_143212  ls
+ 2958  20191001_143218  cd test.id 
+ 2959  20191001_143219  ls
+ 2960  20191001_143223  cd ..
+ 2961  20191001_143227  cd scripts/
+ 2962  20191001_143228  ls
+ 2963  20191001_144127  cd ~
+ 2964  20191001_144128  ls
+ 2965  20191001_144135  vim Cascades_TensorFlow_Test.sh 
+ 2966  20191001_143050  cd MultiNews_Summarization/
+ 2967  20191001_143053  cd Multi-News/
+ 2968  20191001_143054  ls
+ 2969  20191001_143106  cd code/Hi_MAP/
+ 2970  20191001_143107  ls
+ 2971  20191001_143130  vim run_prep_newser.sh 
+ 2972  20191005_190950  ls
+ 2973  20191005_191017  cd MultiNews_Summarization/
+ 2974  20191005_191018  ls
+ 2975  20191005_191021  cd Multi-News/
+ 2976  20191005_191022  ls
+ 2977  20191005_192158  cd data/
+ 2978  20191005_192159  ls
+ 2979  20191006_133924  cd MultiNews_Summarization/
+ 2980  20191006_133927  cd Multi-News/
+ 2981  20191006_133928  ls
+ 2982  20191006_133930  cd data/
+ 2983  20191006_133931  ls
+ 2984  20191006_133934  cd multi-news-original/
+ 2985  20191006_133935  ls
+ 2986  20191006_133939  cd multi-news-original/
+ 2987  20191006_133939  ls
+ 2988  20191006_134135  cd ..
+ 2989  20191006_134138  ls
+ 2990  20191006_134146  cd preprocessed_truncated-20191005T233226Z-001/
+ 2991  20191006_134147  ls
+ 2992  20191006_134151  cd preprocessed_truncated/
+ 2993  20191006_134152  ls
+ 2994  20191006_134713  cd ..
+ 2995  20191006_134719  cd ~
+ 2996  20191006_134727  source activate multi_news
+ 2997  20191006_134733  cd MultiNews_Summarization/
+ 2998  20191006_134736  cd Multi-News/
+ 2999  20191006_134739  cd code/
+ 3000  20191006_134745  cd Hi_MAP/
+ 3001  20191006_134746  ls
+ 3002  20191006_135014  cd ..
+ 3003  20191006_135021  cd data/
+ 3004  20191006_135022  ls
+ 3005  20191006_135027  cd multi-news-original/multi-news-original/
+ 3006  20191006_135028  ls
+ 3007  20191006_135030  pwd
+ 3008  20191006_135046  cd ../../
+ 3009  20191006_135050  cd ..
+ 3010  20191006_135052  cd code
+ 3011  20191006_135055  cd Hi_MAP/
+ 3012  20191006_135056  ls
+ 3013  20191006_135107  vim run_prep_newser.sh 
+ 3014  20191006_140040  sbatch run_prep_newser.sh 
+ 3015  20191006_140102  vim run_prep_newser.sh 
+ 3016  20191006_140418  sbatch run_prep_newser.sh 
+ 3017  20191006_140441  jobload 191684
+ 3018  20191006_140509  scontrol show job 191684
+ 3019  20191006_140631  ls
+ 3020  20191006_140640  vi slurm-191684.out 
+ 3021  20191006_141122  pip install https://github.com/pytorch/text/archive/master.zip
+ 3022  20191006_141139  sbatch run_prep_newser.sh 
+ 3023  20191006_141148  scontrol show job 191685
+ 3024  20191006_141155  ls
+ 3025  20191006_141203  vi slurm-191685.out 
+ 3026  20191006_141228  pip install nltk
+ 3027  20191006_141241  sbatch run_prep_newser.sh 
+ 3028  20191006_141248  scontrol show job 191686
+ 3029  20191006_141304  ls
+ 3030  20191006_141310  vi slurm-191686.out 
+ 3031  20191006_141350  /home/ashinmarin/MultiNews_Summarization/Multi-News/data/multi-news-original/multi-news-original/
+ 3032  20191006_141356  cd ~
+ 3033  20191006_141357  /home/ashinmarin/MultiNews_Summarization/Multi-News/data/multi-news-original/multi-news-original/
+ 3034  20191006_141402  cd /home/ashinmarin/MultiNews_Summarization/Multi-News/data/multi-news-original/multi-news-original/
+ 3035  20191006_141404  ls
+ 3036  20191006_141417  cd train.
+ 3037  20191006_141420  cd train.src 
+ 3038  20191006_141422  ls
+ 3039  20191006_141434  cd ~
+ 3040  20191006_141438  cd MultiNews_Summarization/Multi-News/
+ 3041  20191006_141439  ls
+ 3042  20191006_141442  cd code/
+ 3043  20191006_141442  ;s
+ 3044  20191006_141443  ls
+ 3045  20191006_141446  cd Hi_MAP/
+ 3046  20191006_141453  vi run_prep_newser.sh 
+ 3047  20191006_141927  cd ~
+ 3048  20191006_141928  ls
+ 3049  20191006_141934  cd MultiNews_Summarization/Multi-News/
+ 3050  20191006_141936  cd data/
+ 3051  20191006_141938  ls
+ 3052  20191006_141951  mkdir multi-news-original_processed
+ 3053  20191006_141952  ls
+ 3054  20191006_142602  cd multi-news-original_processed/
+ 3055  20191006_142602  ls
+ 3056  20191006_142606  cd ..
+ 3057  20191006_142609  ls
+ 3058  20191006_142613  cd multi-news-original_unprocessed/
+ 3059  20191006_142614  ls
+ 3060  20191006_142622  cd ..
+ 3061  20191006_142626  cd preprocessed_truncated/
+ 3062  20191006_142626  ls
+ 3063  20191006_142629  cd ..
+ 3064  20191006_142633  cd ids/
+ 3065  20191006_142633  ls
+ 3066  20191006_143335  cd ..
+ 3067  20191006_143336  l
+ 3068  20191006_143337  ls
+ 3069  20191006_143341  cd multi-news-original_processed/
+ 3070  20191006_143354  ls
+ 3071  20191006_143413  cd ../../..
+ 3072  20191006_143418  cd code
+ 3073  20191006_143427  cd Multi-News/
+ 3074  20191006_143428  ls
+ 3075  20191006_143434  cd code/
+ 3076  20191006_143437  cd Hi_MAP/
+ 3077  20191006_143437  ls
+ 3078  20191006_143443  vi run_prep_newser.sh 
+ 3079  20191006_143729  sbatch run_prep_newser.sh 
+ 3080  20191006_143757  scontrol show job 191693
+ 3081  20191006_143802  ls
+ 3082  20191006_143808  vi slurm-191693.out 
+ 3083  20191006_144001  vi run_prep_newser.sh 
+ 3084  20191006_144020  vi slurm-191693.out 
+ 3085  20191006_144146  mkdir newser_sent_500/newser_sents
+ 3086  20191006_144201  mkdir newser_sent_500
+ 3087  20191006_144204  ls
+ 3088  20191006_144208  cd newser_sent_500/
+ 3089  20191006_144218  mkdir newser_sents
+ 3090  20191006_144219  ls
+ 3091  20191006_144223  cd ../..
+ 3092  20191006_144229  vi run_prep_newser.sh 
+ 3093  20191006_144302  sbatch run_prep_newser.sh 
+ 3094  20191006_144311  ls
+ 3095  20191006_144314  cd Hi_MAP/
+ 3096  20191006_144317  sbatch run_prep_newser.sh 
+ 3097  20191006_144337  scontrol -s job 191694
+ 3098  20191006_144350  scontrol show job 191694
+ 3099  20191006_144759  s
+ 3100  20191006_144800  ls
+ 3101  20191006_144810  vi slurm-191694.out 
+ 3102  20191006_144853  cd newser_sent_500/
+ 3103  20191006_144855  ls
+ 3104  20191006_144900  cd newser_sents
+ 3105  20191006_144901  ls
+ 3106  20191006_144916  cd ..
+ 3107  20191006_144932  vi run_train_newser.sh 
+ 3108  20191006_145310  sbatch run_train_newser.sh 
+ 3109  20191006_145323  scontrol show job 191698
+ 3110  20191006_145332  ls
+ 3111  20191006_145342  vi slurm-191698.out 
+ 3112  20191006_145359  cd newser_sent_500/
+ 3113  20191006_145400  ls
+ 3114  20191006_145416  cd ..
+ 3115  20191006_145427  mkdir newser_sent_500_300
+ 3116  20191006_145428  ls
+ 3117  20191006_145435  cd newser_sent_500_300/
+ 3118  20191006_145838  ls
+ 3119  20191006_145922  cd ..
+ 3120  20191006_145927  cd newser_sent_500
+ 3121  20191006_145928  ls
+ 3122  20191006_145936  cd ..
+ 3123  20191006_145944  sbatch run_train_newser.sh 
+ 3124  20191006_145958  scontrol show job 191702
+ 3125  20191009_194342  ls
+ 3126  20191009_194345  cd MultiNews_Summarization/
+ 3127  20191009_194347  cd Multi-News/
+ 3128  20191009_194348  ls
+ 3129  20191009_194355  cd code/
+ 3130  20191009_194411  ls
+ 3131  20191009_194414  cd Hi_MAP/
+ 3132  20191009_194416  ls
+ 3133  20191009_194626  vi slurm-191702.out 
+ 3134  20191009_195129  vi run_prep_newser.sh 
+ 3135  20191009_195151  scontrol show job 191702
+ 3136  20191009_195256  vi slurm-191702.out 
+ 3137  20191009_203239  vi run_inference_newser.sh 
+ 3138  20191009_203303  cd model_newser_atten/
+ 3139  20191009_203304  ls
+ 3140  20191009_203436  cd ..
+ 3141  20191009_203444  vi run_inference_
+ 3142  20191009_203454  vi run_inference_newser.sh 
+ 3143  20191009_204312  vi run_prep_newser.sh 
+ 3144  20191009_204329  vi run_inference_newser.sh 
+ 3145  20191009_204409  mkdir output_newser
+ 3146  20191009_204411  ls
+ 3147  20191009_204425  vi run_prep_newser.sh 
+ 3148  20191009_204437  vi run_inference_newser.sh 
+ 3149  20191009_204544  sbatch run_inference_newser.sh 
+ 3150  20191009_204600  scontrol show job 194405
+ 3151  20191009_204649  ls
+ 3152  20191009_204658  vi slurm-194405.out 
+ 3153  20191009_204703  scontrol show job 194405
+ 3154  20191011_103955  ls
+ 3155  20191011_104002  cd MultiNews_Summarization/
+ 3156  20191011_104003  ls
+ 3157  20191011_104006  cd Multi-News/
+ 3158  20191011_104006  ls
+ 3159  20191011_104009  cd code/
+ 3160  20191011_104010  ls
+ 3161  20191011_104013  cd Hi_MAP/
+ 3162  20191011_104014  ls
+ 3163  20191011_104113  scontrol show job 194405
+ 3164  20191011_104118  vi slurm-194405.out 
+ 3165  20191011_104313  cd output_newser/
+ 3166  20191011_104314  ls
+ 3167  20191011_104320  vi Feb17__step_30000_full.output 
+ 3168  20191011_104417  cd ..
+ 3169  20191011_104422  vi run_inference_newser.sh 
+ 3170  20191011_104532  cd mcd cd  
+ 3171  20191011_104539  cd model_newser_atten/
+ 3172  20191011_104540  ls
+ 3173  20191011_104627  cd ../..
+ 3174  20191011_104629  ls
+ 3175  20191011_104643  cd ..
+ 3176  20191011_104656  cd data/
+ 3177  20191011_104656  ls
+ 3178  20191011_104705  cd multi-news-original_processed/
+ 3179  20191011_104706  ls
+ 3180  20191011_105215  vi test.txt.src 
+ 3181  20191011_110922  cd ..
+ 3182  20191011_110925  cd ../code/
+ 3183  20191011_110926  ls
+ 3184  20191011_110931  cd Hi_MAP/
+ 3185  20191011_110932  ls
+ 3186  20191011_110941  vi run_inference_newser.sh 
+ 3187  20191011_111015  sbatch run_inference_newser.sh 
+ 3188  20191011_113035  scontrol show job 195165
+ 3189  20191011_154408  cd MultiNews_Summarization/Multi-News/code/Hi_MAP/
+ 3190  20191011_154409  ls
+ 3191  20191011_154421  vi run_inference_newser.sh 
+ 3192  20191011_154514  scontrol show job 195165
+ 3193  20191011_154522  vi slurm-195165.out 
+ 3194  20191011_154538  sbatch run_inference_newser.sh 
+ 3195  20191011_154652  scontrol show job 195399
+ 3196  20191011_170315  ls
+ 3197  20191011_170322  cd MultiNews_Summarization/Multi-News/code/Hi_MAP/
+ 3198  20191011_170323  ls
+ 3199  20191011_170330  vi slurm-195165.out 
+ 3200  20191011_170343  vi output_newser/
+ 3201  20191011_170351  cd output_newser/
+ 3202  20191011_170352  ls
+ 3203  20191011_170400  vi Feb17__step_15000_full.output 
+ 3204  20191011_171437  cd ..
+ 3205  20191011_171445  vi run_inference_newser.sh 
+ 3206  20191011_171511  sbatch run_inference_newser.sh 
+ 3207  20191011_173359  scontrol show job 195452
+ 3208  20191012_011746  ls
+ 3209  20191012_011753  cd MultiNews_Summarization/Multi-News/code/Hi_MAP/
+ 3210  20191012_011754  ls
+ 3211  20191012_011806  vi slurm-195452.out 
+ 3212  20191012_011816  cd output_newser/
+ 3213  20191012_011817  ls
+ 3214  20191012_011829  vi Feb17__step_30000_full.output 
+ 3215  20191012_011843  scontrol show jon 195452
+ 3216  20191012_011851  scontrol show job 195452
+ 3217  20191012_011900  vi slurm-195452.out 
+ 3218  20191012_011914  cd ..
+ 3219  20191012_011920  vi run_inference_newser.sh 
+ 3220  20191012_012141  cd output_newser/
+ 3221  20191012_012142  ls
+ 3222  20191012_012148  vi Feb17__step_30000_full.output 
+ 3223  20191012_180153  cd MultiNews_Summarization/Multi-News/code/Hi_MAP/
+ 3224  20191012_180154  ls
+ 3225  20191012_180158  cd output_newser/
+ 3226  20191012_180201  ls -al
+ 3227  20191012_180226  vi Feb17__step_30000_full.output 
+ 3228  20191012_180400  cd ..
+ 3229  20191012_180416  vi run_inference_newser.sh 
+ 3230  20191012_180435  sbatch run_inference_newser.sh 
+ 3231  20191012_183804  sbatch run_inference_newser.sh scontrol show jobsc
+ 3232  20191012_183904  scontrol show job 195797
+ 3233  20191012_195319  ls
+ 3234  20191012_195329  cd MultiNews_Summarization/Multi-News/code/
+ 3235  20191012_195330  ls
+ 3236  20191012_195332  cd Hi_MAP/
+ 3237  20191012_195333  ls
+ 3238  20191012_195347  cd output_newser/
+ 3239  20191012_195348  ls
+ 3240  20191012_195352  ls -al
+ 3241  20191012_195428  scontrol show job 195797
+ 3242  20191012_195443  vi Feb17__step_30000_full.output 
+ 3243  20191012_200112  cd ..
+ 3244  20191012_200116  vi run_inference_newser.sh 
+ 3245  20191012_204837  vi slurm-195797.out 
+ 3246  20191012_205010  vi run_inference_newser.sh 
+ 3247  20191012_205107  sbatch run_inference_newser.sh 
+ 3248  20191012_205122  scontrol show job 195845
+ 3249  20191015_110432  ls
+ 3250  20191015_110439  cd MultiNews_Summarization/Multi-News/code/Hi_MAP/
+ 3251  20191015_110440  ls
+ 3252  20191015_110449  vi slurm-195845.out 
+ 3253  20191015_110556  vi run_inference_newser.sh 
+ 3254  20191015_110621  sbatch run_inference_newser.sh 
+ 3255  20191015_110632  scontrol show job 197439
+ 3256  20191015_114658  scontrol show job 197439
+ 3257  20191015_115127  scontrol show job 197439
+ 3258  20191015_121837  scontrol show job 195845
+ 3259  20191015_123412  scontrol show job 197439
+ 3260  20191015_124909  scontrol show job 195845
+ 3261  20191015_124911  scontrol show job 197439
+ 3262  20191015_140457  ls
+ 3263  20191015_140500  scontrol show job 197439
+ 3264  20191016_142845  ls
+ 3265  20191016_142858  cd MultiNews_Summarization/Multi-News/code/Hi_MAP/
+ 3266  20191016_142859  ls
+ 3267  20191016_142914  scontrol show job 197439
+ 3268  20191016_142920  vi slurm-197439.out 
+ 3269  20191016_143907  cd ~
+ 3270  20191016_143912  pwd
+ 3271  20191016_143923  ls
+ 3272  20191016_144046  cd MultiNews_Summarization/Multi-News/code/Hi_MAP/
+ 3273  20191016_144046  ls
+ 3274  20191016_144051  cd output_newser/
+ 3275  20191016_144054  ls
+ 3276  20191016_144058  ls -al
+ 3277  20191016_144103  pwd
+ 3278  20191016_144924  cd ..
+ 3279  20191016_144937  vi slurm-197439.out 
+ 3280  20191016_145806  vi run_inference_newser.sh 
+ 3281  20191024_202927  source activate multi_news
+ 3282  20191024_202935  python
+ 3283  20191024_203013  pip install bert_Serving
+ 3284  20191024_203026  pip install bert_serving
+ 3285  20191024_203040  pip install bert-serving-server
+ 3286  20191024_203443  pip install bert-serving-client
+ 3287  20191024_203447  python
+ 3288  20191024_203524  bert-serving-start -model_dir /tmp/english_L-12_H-768_A-12/ -num_worker=4 
+ 3289  20191024_203603  pip install tensorflow=1.13.0
+ 3290  20191024_203608  pip install tensorflow==1.13.0
+ 3291  20191024_203646  pip install tensorflow==1.12.0
+ 3292  20191024_203910  bert-serving-start -model_dir /tmp/english_L-12_H-768_A-12/ -num_worker=4 
+ 3293  20191025_004852  ls
+ 3294  20191025_005136  pwd
+ 3295  20191025_005208  cd MultiNews_Summarization/
+ 3296  20191025_005209  pwd
+ 3297  20191025_005212  ls
+ 3298  20191025_005215  cd Multi-News/
+ 3299  20191025_005216  ls
+ 3300  20191025_005224  pwd
+ 3301  20191025_010804  ls
+ 3302  20191025_010850  unzip cased_L-12_H-768_A-12.zip 
+ 3303  20191025_010918  ls
+ 3304  20191025_011108  ls cd cased_L-12_H-768_A-12
+ 3305  20191025_011109  ls
+ 3306  20191025_011303  bert-serving-start -model_dir cased_L-12_H-768_A-12/ -num_worker=1
+ 3307  20191025_011351  source activate multinews
+ 3308  20191025_011412  source activate multi_news
+ 3309  20191025_011417  bert-serving-start -model_dir cased_L-12_H-768_A-12/ -num_worker=1
+ 3310  20191025_012512  python
+ 3311  20191025_111857  source activate multi_news
+ 3312  20191025_111910  cd MultiNews_Summarization/Multi-News/
+ 3313  20191025_111911  ls
+ 3314  20191025_111927  bert-serving-start -model_dir cased_L-12_H-768_A-12/ -num_worker=4 
+ 3315  20191025_105139  source activate multi_news
+ 3316  20191025_105236  python
+ 3317  20191025_174452  ls
+ 3318  20191025_174513  cd MultiNews_Summarization/Multi-News/
+ 3319  20191025_174514  ls
+ 3320  20191025_174523  cd code/
+ 3321  20191025_174524  ls
+ 3322  20191025_174527  cd ..
+ 3323  20191025_174529  cd data/
+ 3324  20191025_174530  ls
+ 3325  20191025_174603  cd preprocessed_truncated/
+ 3326  20191025_174604  ls
+ 3327  20191025_174614  vi train.txt.tgt.tokenized.fixed.cleaned.final.truncated.txt 
+ 3328  20191025_180249  ls
+ 3329  20191025_181840  cd ..
+ 3330  20191025_181842  ls
+ 3331  20191025_181845  cd data_
+ 3332  20191025_181848  cd data_raw/
+ 3333  20191025_181848  ls
+ 3334  20191025_181851  cd ..
+ 3335  20191025_181854  cd data_process/
+ 3336  20191025_181854  ls
+ 3337  20191025_182137  cd ..
+ 3338  20191025_182316  ls
+ 3339  20191025_182324  cd ..
+ 3340  20191025_182326  cd code/
+ 3341  20191025_182327  ;s
+ 3342  20191025_182328  ls
+ 3343  20191025_182346  chmod a+x np_array_test.py
+ 3344  20191025_182528  nano np_array_test.py
+ 3345  20191025_182859  ls
+ 3346  20191025_182906  cd 
+ 3347  20191025_182911  cd~
+ 3348  20191025_182912  cd ~
+ 3349  20191025_182914  ls
+ 3350  20191025_182948  cd .ssh/
+ 3351  20191025_182949  ls
+ 3352  20191025_182955  cat authorized_keys 
+ 3353  20191025_183001  nano authorized_keys 
+ 3354  20191025_183638  cd .ssh
+ 3355  20191025_183643  cat authorized_keys
+ 3356  20191025_183654  nano authorized_keys
+ 3357  20191025_183722  cat authorized_keys
+ 3358  20191025_183813  nano authorized_keys
+ 3359  20191025_183934  ls
+ 3360  20191025_183944  cat known_hosts 
+ 3361  20191025_183947  cd ..
+ 3362  20191025_183951  cd .ssh
+ 3363  20191025_183952  ls
+ 3364  20191025_183957  cat authorized_keys
+ 3365  20191025_184430  cd ..
+ 3366  20191025_184433  cd .ssh
+ 3367  20191025_184434  ls
+ 3368  20191025_184441  cat authorized_keys
+ 3369  20191025_184332  ls
+ 3370  20191025_185815  cd MultiNews_Summarization/Multi-News/code/
+ 3371  20191025_185822  vi np_array_test.py 
+ 3372  20191025_185941  cd ..
+ 3373  20191025_185944  cd data/
+ 3374  20191025_185944  ls
+ 3375  20191025_190034  cd data_process/
+ 3376  20191025_190036  ls
+ 3377  20191025_190041  pwd
+ 3378  20191025_190113  cd ..
+ 3379  20191025_190118  cd code/
+ 3380  20191025_190119  ls
+ 3381  20191025_190123  vi np_array_test.py 
+ 3382  20191025_190324  python np_array_test.py 
+ 3383  20191025_190329  vi np_array_test.py 
+ 3384  20191025_190338  python np_array_test.py 
+ 3385  20191029_121210  ls
+ 3386  20191029_121238  cd MultiNews_Summarization/Multi-News/
+ 3387  20191029_121239  ls
+ 3388  20191029_121246  cd code
+ 3389  20191029_121247  ls
+ 3390  20191029_121718  vi np_array_test.py 
+ 3391  20191029_121738  source activate multi_news
+ 3392  20191029_121821  python np_array_test.py 
+ 3393  20191029_122056  vi np_array_test.py 
+ 3394  20191029_122117  python np_array_test.py 
+ 3395  20191029_122425  vi np_array_test.py 
+ 3396  20191029_122547  python np_array_test.py 
+ 3397  20191029_122847  vi np_array_test.py 
+ 3398  20191029_122907  python np_array_test.py 
+ 3399  20191029_123703  vi np_array_test.py 
+ 3400  20191029_123722  cd ..
+ 3401  20191029_123724  cd data/
+ 3402  20191029_123725  ls
+ 3403  20191029_123728  cd data_
+ 3404  20191029_123733  cd data_process/
+ 3405  20191029_123733  ls
+ 3406  20191029_123740  vi test_ext.json 
+ 3407  20191029_123816  cd ..
+ 3408  20191029_123819  cd code
+ 3409  20191029_123822  vi np_array_test.py 
+ 3410  20191029_123838  python np_array_test.py 
+ 3411  20191029_123957  vi np_array_test.py 
+ 3412  20191029_124015  python np_array_test.py 
+ 3413  20191029_124020  vi np_array_test.py 
+ 3414  20191029_124028  python np_array_test.py 
+ 3415  20191029_124100  vi np_array_test.py 
+ 3416  20191029_124115  python np_array_test.py 
+ 3417  20191029_124120  vi np_array_test.py 
+ 3418  20191029_124310  python np_array_test.py 
+ 3419  20191029_124316  vi np_array_test.py 
+ 3420  20191029_124324  python np_array_test.py 
+ 3421  20191029_125802  vi np_array_test.py 
+ 3422  20191029_125924  cd MultiNews_Summarization/Multi-News/
+ 3423  20191029_125925  ls
+ 3424  20191029_125929  cd code/
+ 3425  20191029_125934  vi np_array_test.py 
+ 3426  20191029_130120  python np_array_test.py 
+ 3427  20191029_130125  vi np_array_test.py 
+ 3428  20191029_130151  python np_array_test.py 
+ 3429  20191029_130201  source activate multi_news
+ 3430  20191029_130207  python np_array_test.py 
+ 3431  20191029_130220  vi np_array_test.py 
+ 3432  20191029_130238  python np_array_test.py 
+ 3433  20191029_131008  vi np_array_test.py 
+ 3434  20191029_131035  python np_array_test.py 
+ 3435  20191029_131231  vi np_array_test.py 
+ 3436  20191029_131249  python np_array_test.py 
+ 3437  20191029_131414  vi np_array_test.py 
+ 3438  20191029_131424  python np_array_test.py 
+ 3439  20191029_131501  vi np_array_test.py 
+ 3440  20191029_131619  python np_array_test.py 
+ 3441  20191029_131658  vi np_array_test.py 
+ 3442  20191029_131709  python np_array_test.py 
+ 3443  20191029_131727  vi np_array_test.py 
+ 3444  20191029_132128  python np_array_test.py 
+ 3445  20191029_182221  cd MultiNews_Summarization/Multi-News/
+ 3446  20191029_182228  ls
+ 3447  20191029_183014  bert-serving-start -model_dir cased_L-12_H-768_A-12/ -num_worker=4 
+ 3448  20191029_183023  source activate multi_news
+ 3449  20191029_183032  bert-serving-start -model_dir cased_L-12_H-768_A-12/ -num_worker=4 
+ 3450  20191029_183103  bert-serving-start -model_dir cased_L-12_H-768_A-12/ -num_worker=1
+ 3451  20191029_184945  bert-serving-start -model_dir cased_L-12_H-768_A-12/ -num_worker=1 -max_seq_len NONE
+ 3452  20191029_185015  bert-serving-start -max_seq_len NONE -model_dir cased_L-12_H-768_A-12/ -num_worker=1
+ 3453  20191029_182053  cd MultiNews_Summarization/Multi-News/
+ 3454  20191029_182056  cd code/
+ 3455  20191029_182110  vi np_array_test.py 
+ 3456  20191029_183121  python np_array_test.py 
+ 3457  20191029_183131  source activate multi_news
+ 3458  20191029_183132  python np_array_test.py 
+ 3459  20191029_184741  s
+ 3460  20191029_184743  ls
+ 3461  20191029_184906  vi np_array_test.py 
+ 3462  20191029_185048  python np_array_test.py 
+ 3463  20191029_193932  vec
+ 3464  20191029_193935  vi np_array_test.py 
+ 3465  20191029_194001  python np_array_test.py 
+ 3466  20191029_203020  vi np_array_test.py 
+ 3467  20191029_203030  python np_array_test.py 
+ 3468  20191030_013058  cd MultiNews_Summarization/Multi-News/code/
+ 3469  20191030_013059  ls
+ 3470  20191030_013102  cd ..
+ 3471  20191030_013103  ls
+ 3472  20191030_013133  bert-serving-start -max_seq_len NONE -model_dir cased_L-12_H-768_A-12/ -num_worker=1
+ 3473  20191030_013143  source activate multi_news
+ 3474  20191030_013152  bert-serving-start -max_seq_len NONE -model_dir cased_L-12_H-768_A-12/ -num_worker=1
+ 3475  20191030_013242  cd MultiNews_Summarization/Multi-News/code/
+ 3476  20191030_013245  python np_array_test.py 
+ 3477  20191030_013254  source activate multi_news
+ 3478  20191030_013257  python np_array_test.py 
+ 3479  20191030_124026  cd MultiNews_Summarization/Multi-News/code/
+ 3480  20191030_124027  ls
+ 3481  20191030_124030  vi np_array_test.py 
+ 3482  20191101_104015  cd data
+ 3483  20191101_104020  cd MultiNews_Summarization/Multi-News/
+ 3484  20191101_104020  ls
+ 3485  20191101_104027  cd data/
+ 3486  20191101_104027  ls
+ 3487  20191101_104040  cd data_process/
+ 3488  20191101_104041  ls
+ 3489  20191101_104048  vi test_ext.json 
+ 3490  20191119_172148  pwd
+ 3491  20191119_172149  ls
+ 3492  20191119_172159  pwd
+ 3493  20191119_172207  mkdir raghavs
+ 3494  20191119_172222  pwd
+ 3495  20191119_172223  ls
+ 3496  20191119_172257  jupyter notebook &
+ 3497  20191119_173146  firefox &
+ 3498  20191119_173224  chrome &
+ 3499  20191125_234716  ls
+ 3500  20191125_234723  nvidia smi--
+ 3501  20191125_234732  nvidia-smi
+ 3502  20191125_234750  history
+ 3503  20191125_234757  history > history

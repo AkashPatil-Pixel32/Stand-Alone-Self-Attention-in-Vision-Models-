@@ -1,0 +1,275 @@
+Files already downloaded and verified
+Files already downloaded and verified
+img_size: 32, num_classes: 100, stem: True
+Running Resnet50
+Number of model parameters:  25557032
+[Epoch    1] Loss: 4.924 Acc: 0.000%,  Current learning rate is: 0.1
+[Epoch    1] Loss: 4.689 Acc: 4.000%,  Current learning rate is: 0.1
+[Epoch    1] Loss: 4.672 Acc: 0.000%,  Current learning rate is: 0.1
+[Epoch    1] Loss: 4.792 Acc: 0.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 1.83
+printing best accuracy so far1.83
+filename ::  model_ckpt.tar
+best Model Saving ...
+[Epoch    2] Loss: 4.663 Acc: 0.000%,  Current learning rate is: 0.1
+[Epoch    2] Loss: 4.476 Acc: 0.000%,  Current learning rate is: 0.1
+[Epoch    2] Loss: 4.267 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch    2] Loss: 4.508 Acc: 8.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 5.08
+printing best accuracy so far5.08
+filename ::  model_ckpt.tar
+best Model Saving ...
+[Epoch    3] Loss: 4.383 Acc: 4.000%,  Current learning rate is: 0.1
+[Epoch    3] Loss: 4.568 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch    3] Loss: 4.201 Acc: 0.000%,  Current learning rate is: 0.1
+[Epoch    3] Loss: 4.122 Acc: 8.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 7.41
+printing best accuracy so far7.41
+filename ::  model_ckpt.tar
+best Model Saving ...
+[Epoch    4] Loss: 4.322 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch    4] Loss: 4.531 Acc: 0.000%,  Current learning rate is: 0.1
+[Epoch    4] Loss: 3.989 Acc: 4.000%,  Current learning rate is: 0.1
+[Epoch    4] Loss: 4.376 Acc: 4.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 7.94
+printing best accuracy so far7.94
+filename ::  model_ckpt.tar
+best Model Saving ...
+[Epoch    5] Loss: 3.993 Acc: 4.000%,  Current learning rate is: 0.1
+[Epoch    5] Loss: 4.266 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch    5] Loss: 4.156 Acc: 20.000%,  Current learning rate is: 0.1
+[Epoch    5] Loss: 3.968 Acc: 16.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 8.30
+printing best accuracy so far8.3
+filename ::  model_ckpt.tar
+best Model Saving ...
+[Epoch    6] Loss: 3.743 Acc: 12.000%,  Current learning rate is: 0.1
+[Epoch    6] Loss: 4.248 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch    6] Loss: 3.850 Acc: 16.000%,  Current learning rate is: 0.1
+[Epoch    6] Loss: 4.029 Acc: 12.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 9.11
+printing best accuracy so far9.11
+filename ::  model_ckpt.tar
+best Model Saving ...
+[Epoch    7] Loss: 4.308 Acc: 0.000%,  Current learning rate is: 0.1
+[Epoch    7] Loss: 4.038 Acc: 16.000%,  Current learning rate is: 0.1
+[Epoch    7] Loss: 3.719 Acc: 12.000%,  Current learning rate is: 0.1
+[Epoch    7] Loss: 3.863 Acc: 8.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 10.41
+printing best accuracy so far10.41
+filename ::  model_ckpt.tar
+best Model Saving ...
+[Epoch    8] Loss: 4.227 Acc: 4.000%,  Current learning rate is: 0.1
+[Epoch    8] Loss: 4.117 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch    8] Loss: 4.194 Acc: 0.000%,  Current learning rate is: 0.1
+[Epoch    8] Loss: 3.489 Acc: 12.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 10.50
+printing best accuracy so far10.5
+filename ::  model_ckpt.tar
+best Model Saving ...
+[Epoch    9] Loss: 4.230 Acc: 4.000%,  Current learning rate is: 0.1
+[Epoch    9] Loss: 4.336 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch    9] Loss: 4.271 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch    9] Loss: 4.115 Acc: 12.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 11.72
+printing best accuracy so far11.72
+filename ::  model_ckpt.tar
+best Model Saving ...
+[Epoch   10] Loss: 4.249 Acc: 12.000%,  Current learning rate is: 0.1
+[Epoch   10] Loss: 4.025 Acc: 12.000%,  Current learning rate is: 0.1
+[Epoch   10] Loss: 3.836 Acc: 0.000%,  Current learning rate is: 0.1
+[Epoch   10] Loss: 3.770 Acc: 16.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 11.23
+filename ::  model_ckpt.tar
+[Epoch   11] Loss: 3.828 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch   11] Loss: 3.780 Acc: 24.000%,  Current learning rate is: 0.1
+[Epoch   11] Loss: 3.457 Acc: 12.000%,  Current learning rate is: 0.1
+[Epoch   11] Loss: 3.969 Acc: 12.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 12.92
+printing best accuracy so far12.92
+filename ::  model_ckpt.tar
+best Model Saving ...
+[Epoch   12] Loss: 3.933 Acc: 16.000%,  Current learning rate is: 0.1
+[Epoch   12] Loss: 3.971 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch   12] Loss: 3.721 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch   12] Loss: 3.943 Acc: 8.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 11.78
+filename ::  model_ckpt.tar
+[Epoch   13] Loss: 4.266 Acc: 4.000%,  Current learning rate is: 0.1
+[Epoch   13] Loss: 4.312 Acc: 4.000%,  Current learning rate is: 0.1
+[Epoch   13] Loss: 3.665 Acc: 16.000%,  Current learning rate is: 0.1
+[Epoch   13] Loss: 4.320 Acc: 12.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 10.91
+filename ::  model_ckpt.tar
+[Epoch   14] Loss: 3.904 Acc: 12.000%,  Current learning rate is: 0.1
+[Epoch   14] Loss: 3.874 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch   14] Loss: 3.844 Acc: 16.000%,  Current learning rate is: 0.1
+[Epoch   14] Loss: 4.068 Acc: 16.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 11.96
+filename ::  model_ckpt.tar
+[Epoch   15] Loss: 4.071 Acc: 0.000%,  Current learning rate is: 0.1
+[Epoch   15] Loss: 4.178 Acc: 0.000%,  Current learning rate is: 0.1
+[Epoch   15] Loss: 4.367 Acc: 0.000%,  Current learning rate is: 0.1
+[Epoch   15] Loss: 3.787 Acc: 24.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 11.91
+filename ::  model_ckpt.tar
+[Epoch   16] Loss: 3.964 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch   16] Loss: 3.383 Acc: 24.000%,  Current learning rate is: 0.1
+[Epoch   16] Loss: 3.810 Acc: 4.000%,  Current learning rate is: 0.1
+[Epoch   16] Loss: 3.617 Acc: 20.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 13.38
+printing best accuracy so far13.38
+filename ::  model_ckpt.tar
+best Model Saving ...
+[Epoch   17] Loss: 3.829 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch   17] Loss: 3.610 Acc: 16.000%,  Current learning rate is: 0.1
+[Epoch   17] Loss: 4.187 Acc: 0.000%,  Current learning rate is: 0.1
+[Epoch   17] Loss: 3.933 Acc: 4.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 11.93
+filename ::  model_ckpt.tar
+[Epoch   18] Loss: 3.847 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch   18] Loss: 3.547 Acc: 16.000%,  Current learning rate is: 0.1
+[Epoch   18] Loss: 3.281 Acc: 16.000%,  Current learning rate is: 0.1
+[Epoch   18] Loss: 3.675 Acc: 20.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 11.72
+filename ::  model_ckpt.tar
+[Epoch   19] Loss: 3.691 Acc: 12.000%,  Current learning rate is: 0.1
+[Epoch   19] Loss: 4.071 Acc: 0.000%,  Current learning rate is: 0.1
+[Epoch   19] Loss: 3.682 Acc: 20.000%,  Current learning rate is: 0.1
+[Epoch   19] Loss: 4.052 Acc: 12.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 12.64
+filename ::  model_ckpt.tar
+[Epoch   20] Loss: 4.324 Acc: 0.000%,  Current learning rate is: 0.1
+[Epoch   20] Loss: 4.318 Acc: 4.000%,  Current learning rate is: 0.1
+[Epoch   20] Loss: 4.282 Acc: 12.000%,  Current learning rate is: 0.1
+[Epoch   20] Loss: 4.094 Acc: 8.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 10.03
+filename ::  model_ckpt.tar
+[Epoch   21] Loss: 3.921 Acc: 4.000%,  Current learning rate is: 0.1
+[Epoch   21] Loss: 4.027 Acc: 4.000%,  Current learning rate is: 0.1
+[Epoch   21] Loss: 3.862 Acc: 16.000%,  Current learning rate is: 0.1
+[Epoch   21] Loss: 3.621 Acc: 12.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 13.78
+printing best accuracy so far13.78
+filename ::  model_ckpt.tar
+best Model Saving ...
+[Epoch   22] Loss: 3.448 Acc: 20.000%,  Current learning rate is: 0.1
+[Epoch   22] Loss: 3.779 Acc: 12.000%,  Current learning rate is: 0.1
+[Epoch   22] Loss: 3.703 Acc: 0.000%,  Current learning rate is: 0.1
+[Epoch   22] Loss: 3.791 Acc: 8.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 12.08
+filename ::  model_ckpt.tar
+[Epoch   23] Loss: 3.780 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch   23] Loss: 4.341 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch   23] Loss: 3.802 Acc: 12.000%,  Current learning rate is: 0.1
+[Epoch   23] Loss: 3.739 Acc: 16.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 12.74
+filename ::  model_ckpt.tar
+[Epoch   24] Loss: 4.010 Acc: 12.000%,  Current learning rate is: 0.1
+[Epoch   24] Loss: 4.149 Acc: 4.000%,  Current learning rate is: 0.1
+[Epoch   24] Loss: 4.058 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch   24] Loss: 3.695 Acc: 16.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 11.37
+filename ::  model_ckpt.tar
+[Epoch   25] Loss: 3.836 Acc: 12.000%,  Current learning rate is: 0.1
+[Epoch   25] Loss: 3.737 Acc: 24.000%,  Current learning rate is: 0.1
+[Epoch   25] Loss: 3.785 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch   25] Loss: 3.751 Acc: 8.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 11.71
+filename ::  model_ckpt.tar
+[Epoch   26] Loss: 3.891 Acc: 4.000%,  Current learning rate is: 0.1
+[Epoch   26] Loss: 4.123 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch   26] Loss: 3.950 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch   26] Loss: 3.894 Acc: 12.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 12.82
+filename ::  model_ckpt.tar
+[Epoch   27] Loss: 4.255 Acc: 4.000%,  Current learning rate is: 0.1
+[Epoch   27] Loss: 3.743 Acc: 16.000%,  Current learning rate is: 0.1
+[Epoch   27] Loss: 3.882 Acc: 0.000%,  Current learning rate is: 0.1
+[Epoch   27] Loss: 4.037 Acc: 4.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 12.14
+filename ::  model_ckpt.tar
+[Epoch   28] Loss: 3.756 Acc: 12.000%,  Current learning rate is: 0.1
+[Epoch   28] Loss: 4.061 Acc: 4.000%,  Current learning rate is: 0.1
+[Epoch   28] Loss: 3.940 Acc: 8.000%,  Current learning rate is: 0.1
+[Epoch   28] Loss: 3.822 Acc: 12.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 13.74
+filename ::  model_ckpt.tar
+[Epoch   29] Loss: 4.475 Acc: 0.000%,  Current learning rate is: 0.1
+[Epoch   29] Loss: 4.065 Acc: 4.000%,  Current learning rate is: 0.1
+[Epoch   29] Loss: 3.981 Acc: 16.000%,  Current learning rate is: 0.1
+[Epoch   29] Loss: 4.153 Acc: 8.000%,  Current learning rate is: 0.1
+evaluation ...
+Test acc: 13.21
+filename ::  model_ckpt.tar
+[Epoch   30] Loss: 3.127 Acc: 20.000%,  Current learning rate is: 0.010000000000000002
+[Epoch   30] Loss: 3.135 Acc: 28.000%,  Current learning rate is: 0.010000000000000002
+[Epoch   30] Loss: 3.142 Acc: 16.000%,  Current learning rate is: 0.010000000000000002
+[Epoch   30] Loss: 2.826 Acc: 32.000%,  Current learning rate is: 0.010000000000000002
+evaluation ...
+Test acc: 25.11
+printing best accuracy so far25.11
+filename ::  model_ckpt.tar
+best Model Saving ...
+[Epoch   31] Loss: 3.187 Acc: 24.000%,  Current learning rate is: 0.010000000000000002
+[Epoch   31] Loss: 3.551 Acc: 20.000%,  Current learning rate is: 0.010000000000000002
+[Epoch   31] Loss: 2.975 Acc: 32.000%,  Current learning rate is: 0.010000000000000002
+[Epoch   31] Loss: 3.449 Acc: 16.000%,  Current learning rate is: 0.010000000000000002
+evaluation ...
+Test acc: 26.53
+printing best accuracy so far26.53
+filename ::  model_ckpt.tar
+best Model Saving ...
+[Epoch   32] Loss: 3.128 Acc: 32.000%,  Current learning rate is: 0.010000000000000002
+[Epoch   32] Loss: 3.326 Acc: 12.000%,  Current learning rate is: 0.010000000000000002
+[Epoch   32] Loss: 3.150 Acc: 28.000%,  Current learning rate is: 0.010000000000000002
+[Epoch   32] Loss: 3.056 Acc: 24.000%,  Current learning rate is: 0.010000000000000002
+evaluation ...
+Test acc: 27.06
+printing best accuracy so far27.06
+filename ::  model_ckpt.tar
+best Model Saving ...
+[Epoch   33] Loss: 2.882 Acc: 32.000%,  Current learning rate is: 0.010000000000000002
+[Epoch   33] Loss: 3.440 Acc: 16.000%,  Current learning rate is: 0.010000000000000002
+[Epoch   33] Loss: 3.021 Acc: 28.000%,  Current learning rate is: 0.010000000000000002
+[Epoch   33] Loss: 2.868 Acc: 16.000%,  Current learning rate is: 0.010000000000000002
+evaluation ...
+Test acc: 26.54
+filename ::  model_ckpt.tar
+[Epoch   34] Loss: 2.800 Acc: 32.000%,  Current learning rate is: 0.010000000000000002
+[Epoch   34] Loss: 2.878 Acc: 28.000%,  Current learning rate is: 0.010000000000000002
+[Epoch   34] Loss: 3.381 Acc: 8.000%,  Current learning rate is: 0.010000000000000002
+[Epoch   34] Loss: 3.217 Acc: 20.000%,  Current learning rate is: 0.010000000000000002
+evaluation ...
+Test acc: 28.97
+printing best accuracy so far28.97
+filename ::  model_ckpt.tar
+best Model Saving ...
