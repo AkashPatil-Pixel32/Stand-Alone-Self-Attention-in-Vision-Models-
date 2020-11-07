@@ -6,5 +6,5 @@
 - Implemented SSD object detection model by replacing set of convolution layers with self-attention layers.
 - Evaluated above SSD model for performance change in terms of Accuracy (4.4% less), number of model parameters (5.6% less), and Flops count (very less).
 
-# references:
+# References:
 [Stand-Alone Self-Attention in Vision Models](https://arxiv.org/abs/1906.05909)
